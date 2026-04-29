@@ -1,0 +1,591 @@
+{
+  "_schema": "fair-v2",
+  "_note": "effective_vuln = vuln \u00d7 (1 \u2212 diff).  ALE = LEF \u00d7 loss_magnitude.  control_benefit is computed server-side from proposed_control.",
+  "clients": [
+    {
+      "id": "nexus-financial",
+      "name": "Nexus Financial Group",
+      "industry": "Financial Services",
+      "contact": "John Smith",
+      "risk_tier": "High",
+      "last_updated": "2026-04-24",
+      "scenarios": [
+        {
+          "id": "ransomware",
+          "scenario_type": "ransomware",
+          "name": "Ransomware \u2014 Core Banking Infrastructure",
+          "description": "Threat actor deploys ransomware targeting core banking and payment processing systems, causing multi-day operational outage, recovery costs, and potential regulatory fines.",
+          "asset": "Core Banking & Payment Systems",
+          "threat_actor": "Organized Cybercriminal Group (RaaS)",
+          "parameters": {
+            "tef": {
+              "min": 5.0,
+              "most_likely": 10.0,
+              "max": 20.0
+            },
+            "diff": {
+              "min": 0.43,
+              "most_likely": 0.63,
+              "max": 0.83
+            },
+            "vuln": {
+              "min": 0.15,
+              "most_likely": 0.3,
+              "max": 0.55
+            },
+            "asset_value": 55000000.0,
+            "loss_magnitude": {
+              "min": 225000.0,
+              "most_likely": 750000.0,
+              "max": 2250000.0
+            }
+          },
+          "proposed_control": {
+            "name": "Enhanced EDR + 24/7 MDR Retainer",
+            "description": "Deploy next-gen endpoint detection & response across all servers and workstations with a 24/7 managed detection and response retainer and pre-negotiated IR playbook.",
+            "annual_cost": 180000.0,
+            "residual_ale_reduction_pct": 55.0
+          }
+        },
+        {
+          "id": "data-breach",
+          "scenario_type": "data-breach",
+          "name": "Data Breach \u2014 Customer PII & Financial Records",
+          "description": "Unauthorized exfiltration of customer personally identifiable information and financial records via compromised credentials or SQL injection, triggering regulatory penalties and litigation.",
+          "asset": "Customer Database (PII, Account Data)",
+          "threat_actor": "Advanced Persistent Threat / Credential-Based Attacker",
+          "parameters": {
+            "tef": {
+              "min": 0.3,
+              "most_likely": 0.8,
+              "max": 2.2
+            },
+            "diff": {
+              "min": 0.25,
+              "most_likely": 0.48,
+              "max": 0.72
+            },
+            "vuln": {
+              "min": 0.08,
+              "most_likely": 0.18,
+              "max": 0.38
+            },
+            "asset_value": 40000000.0,
+            "loss_magnitude": {
+              "min": 4000000.0,
+              "most_likely": 16000000.0,
+              "max": 58000000.0
+            }
+          },
+          "proposed_control": {
+            "name": "CASB + DLP + Privileged Access Management",
+            "description": "Implement Cloud Access Security Broker, enterprise Data Loss Prevention, and Privileged Access Management to reduce data exfiltration risk and limit blast radius of credential compromise.",
+            "annual_cost": 240000.0,
+            "residual_ale_reduction_pct": 50.0
+          }
+        },
+        {
+          "id": "bec",
+          "scenario_type": "bec",
+          "name": "Business Email Compromise \u2014 Wire Fraud",
+          "description": "Social engineering attack targeting treasury and finance staff to authorise fraudulent wire transfers to attacker-controlled accounts. High frequency, low per-event success rate.",
+          "asset": "Treasury & Accounts Payable Operations",
+          "threat_actor": "Cybercriminal Fraud Ring",
+          "parameters": {
+            "tef": {
+              "min": 4.0,
+              "most_likely": 8.0,
+              "max": 18.0
+            },
+            "diff": {
+              "min": 0.4,
+              "most_likely": 0.62,
+              "max": 0.85
+            },
+            "vuln": {
+              "min": 0.03,
+              "most_likely": 0.07,
+              "max": 0.16
+            },
+            "asset_value": 8000000.0,
+            "loss_magnitude": {
+              "min": 250000.0,
+              "most_likely": 850000.0,
+              "max": 3800000.0
+            }
+          },
+          "proposed_control": {
+            "name": "Email Security Gateway + Security Awareness Training",
+            "description": "Deploy advanced email security with impersonation detection, DMARC/DKIM enforcement, and a quarterly security awareness training program with BEC-specific simulations.",
+            "annual_cost": 80000.0,
+            "residual_ale_reduction_pct": 65.0
+          }
+        },
+        {
+          "id": "insider-threat",
+          "scenario_type": "insider-threat",
+          "name": "Insider Threat \u2014 Data Exfiltration by Privileged User",
+          "description": "Malicious employee or contractor with privileged database or system access exfiltrates sensitive financial records, customer PII, or trading data for personal gain or competitive espionage.",
+          "asset": "Financial Records, Customer Data, Trading Systems",
+          "threat_actor": "Malicious Employee / Privileged Contractor",
+          "parameters": {
+            "tef": {
+              "min": 0.1,
+              "most_likely": 0.35,
+              "max": 1.0
+            },
+            "diff": {
+              "min": 0.08,
+              "most_likely": 0.22,
+              "max": 0.4
+            },
+            "vuln": {
+              "min": 0.3,
+              "most_likely": 0.5,
+              "max": 0.72
+            },
+            "asset_value": 30000000.0,
+            "loss_magnitude": {
+              "min": 600000.0,
+              "most_likely": 2800000.0,
+              "max": 11000000.0
+            }
+          },
+          "proposed_control": {
+            "name": "UEBA + Zero-Trust Privileged Access",
+            "description": "Deploy User & Entity Behaviour Analytics with anomaly alerts on sensitive data access patterns, combined with just-in-time privileged access controls and session recording.",
+            "annual_cost": 155000.0,
+            "residual_ale_reduction_pct": 45.0
+          }
+        },
+        {
+          "id": "third-party",
+          "scenario_type": "third-party",
+          "name": "Third-Party / Supply Chain Attack \u2014 Fintech Vendor",
+          "description": "Compromise through a trusted fintech partner, core banking software provider, or managed IT/security vendor gives the attacker persistent access to internal systems with minimal detection.",
+          "asset": "Core Systems via Third-Party Integration",
+          "threat_actor": "Nation-State Actor / Sophisticated Criminal Group",
+          "parameters": {
+            "tef": {
+              "min": 0.1,
+              "most_likely": 0.28,
+              "max": 0.8
+            },
+            "diff": {
+              "min": 0.12,
+              "most_likely": 0.32,
+              "max": 0.58
+            },
+            "vuln": {
+              "min": 0.25,
+              "most_likely": 0.45,
+              "max": 0.68
+            },
+            "asset_value": 45000000.0,
+            "loss_magnitude": {
+              "min": 3000000.0,
+              "most_likely": 11000000.0,
+              "max": 42000000.0
+            }
+          },
+          "proposed_control": {
+            "name": "Vendor Risk Management Platform + Contractual Controls",
+            "description": "Implement continuous vendor security assessment platform with mandatory SOC 2 Type II attestation, network segmentation for third-party integrations, and real-time vendor threat intelligence feeds.",
+            "annual_cost": 125000.0,
+            "residual_ale_reduction_pct": 40.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "medcore-health",
+      "name": "MedCore Health Systems",
+      "industry": "Healthcare",
+      "contact": "Sarah Johnson",
+      "last_updated": "2026-02-20",
+      "risk_tier": "Critical",
+      "scenarios": [
+        {
+          "id": "ransomware",
+          "scenario_type": "ransomware",
+          "name": "Ransomware \u2014 Electronic Health Record Systems",
+          "description": "Ransomware encrypts EHR, clinical imaging, and connected medical device systems, forcing diversion of emergency patients, manual processes, and triggering HIPAA breach notification obligations.",
+          "asset": "EHR, Clinical Imaging & Medical Device Networks",
+          "threat_actor": "Ransomware Gang (Healthcare-Targeting)",
+          "parameters": {
+            "tef": {
+              "min": 0.4,
+              "most_likely": 1.2,
+              "max": 3.5
+            },
+            "diff": {
+              "min": 0.1,
+              "most_likely": 0.28,
+              "max": 0.52
+            },
+            "vuln": {
+              "min": 0.2,
+              "most_likely": 0.38,
+              "max": 0.62
+            },
+            "asset_value": 70000000,
+            "loss_magnitude": {
+              "min": 3000000,
+              "most_likely": 11000000,
+              "max": 38000000
+            }
+          },
+          "proposed_control": {
+            "name": "Healthcare EDR + Segmented Backup + IR Retainer",
+            "description": "Deploy healthcare-specific endpoint protection across clinical and administrative devices, implement immutable offline backups for EHR data, and retain a healthcare-specialized incident response firm.",
+            "annual_cost": 290000,
+            "residual_ale_reduction_pct": 60
+          }
+        },
+        {
+          "id": "data-breach",
+          "scenario_type": "data-breach",
+          "name": "Data Breach \u2014 Protected Health Information (PHI)",
+          "description": "Unauthorized access to or exfiltration of Protected Health Information triggering HIPAA breach notification, OCR investigation, class-action litigation, and severe reputational damage.",
+          "asset": "Patient Health Records (PHI / ePHI)",
+          "threat_actor": "External Attacker / Credential Theft",
+          "parameters": {
+            "tef": {
+              "min": 0.2,
+              "most_likely": 0.7,
+              "max": 2.0
+            },
+            "diff": {
+              "min": 0.12,
+              "most_likely": 0.3,
+              "max": 0.55
+            },
+            "vuln": {
+              "min": 0.12,
+              "most_likely": 0.25,
+              "max": 0.48
+            },
+            "asset_value": 50000000,
+            "loss_magnitude": {
+              "min": 2000000,
+              "most_likely": 8000000,
+              "max": 32000000
+            }
+          },
+          "proposed_control": {
+            "name": "PHI Data Governance + HIPAA Compliance Suite",
+            "description": "Implement a PHI data classification and governance platform with automated de-identification controls, multi-factor authentication on all EHR access, and continuous HIPAA compliance monitoring.",
+            "annual_cost": 175000,
+            "residual_ale_reduction_pct": 50
+          }
+        },
+        {
+          "id": "bec",
+          "scenario_type": "bec",
+          "name": "Business Email Compromise \u2014 Billing & Vendor Payments",
+          "description": "Spear-phishing targeting billing coordinators or C-suite executives to redirect vendor payments, insurance reimbursements, or grant funding to attacker-controlled accounts.",
+          "asset": "Billing, Accounts Payable & Grant Administration",
+          "threat_actor": "Cybercriminal Fraud Group",
+          "parameters": {
+            "tef": {
+              "min": 2.0,
+              "most_likely": 5.0,
+              "max": 12.0
+            },
+            "diff": {
+              "min": 0.2,
+              "most_likely": 0.42,
+              "max": 0.68
+            },
+            "vuln": {
+              "min": 0.04,
+              "most_likely": 0.1,
+              "max": 0.22
+            },
+            "asset_value": 6000000,
+            "loss_magnitude": {
+              "min": 150000,
+              "most_likely": 600000,
+              "max": 2800000
+            }
+          },
+          "proposed_control": {
+            "name": "DMARC Enforcement + Clinical Staff Phishing Training",
+            "description": "Enforce DMARC/DKIM/SPF on all email domains, deploy advanced anti-phishing gateway, and deliver quarterly phishing simulation campaigns with clinical and administrative staff-specific content.",
+            "annual_cost": 70000,
+            "residual_ale_reduction_pct": 60
+          }
+        },
+        {
+          "id": "insider-threat",
+          "scenario_type": "insider-threat",
+          "name": "Insider Threat \u2014 Patient Data Theft",
+          "description": "Clinician, administrator, or contractor accesses patient records without authorisation \u2014 for identity theft, insurance fraud, or sale on dark-web marketplaces \u2014 triggering HIPAA enforcement and litigation.",
+          "asset": "Patient Health Records & Identity Data",
+          "threat_actor": "Malicious / Negligent Healthcare Employee",
+          "parameters": {
+            "tef": {
+              "min": 0.2,
+              "most_likely": 0.6,
+              "max": 1.8
+            },
+            "diff": {
+              "min": 0.05,
+              "most_likely": 0.18,
+              "max": 0.38
+            },
+            "vuln": {
+              "min": 0.35,
+              "most_likely": 0.55,
+              "max": 0.78
+            },
+            "asset_value": 35000000,
+            "loss_magnitude": {
+              "min": 500000,
+              "most_likely": 2200000,
+              "max": 9000000
+            }
+          },
+          "proposed_control": {
+            "name": "PHI Access Controls + PAM + User Behaviour Analytics",
+            "description": "Implement role-based PHI access with need-to-know enforcement, privileged access management for admin accounts, and user behaviour analytics to detect anomalous patient record access patterns.",
+            "annual_cost": 140000,
+            "residual_ale_reduction_pct": 45
+          }
+        },
+        {
+          "id": "third-party",
+          "scenario_type": "third-party",
+          "name": "Third-Party / Supply Chain \u2014 Medical Device & SaaS Vendor",
+          "description": "Compromise through a connected medical device manufacturer, healthcare SaaS platform, or managed service provider used across clinical and administrative operations.",
+          "asset": "Clinical Systems via Third-Party Integrations",
+          "threat_actor": "Nation-State Actor / Sophisticated Criminal Group",
+          "parameters": {
+            "tef": {
+              "min": 0.1,
+              "most_likely": 0.3,
+              "max": 0.9
+            },
+            "diff": {
+              "min": 0.08,
+              "most_likely": 0.25,
+              "max": 0.5
+            },
+            "vuln": {
+              "min": 0.28,
+              "most_likely": 0.5,
+              "max": 0.75
+            },
+            "asset_value": 60000000,
+            "loss_magnitude": {
+              "min": 4000000,
+              "most_likely": 13000000,
+              "max": 48000000
+            }
+          },
+          "proposed_control": {
+            "name": "Healthcare Vendor Security Assessment Program",
+            "description": "Mandate HITRUST or SOC 2 Type II for all clinical SaaS vendors, deploy medical device network isolation, and establish a continuous vendor threat intelligence and monitoring capability.",
+            "annual_cost": 105000,
+            "residual_ale_reduction_pct": 35
+          }
+        }
+      ]
+    },
+    {
+      "id": "techvault-solutions",
+      "name": "TechVault Solutions",
+      "industry": "Technology",
+      "contact": "Alex Chen",
+      "last_updated": "2026-03-28",
+      "risk_tier": "Medium",
+      "scenarios": [
+        {
+          "id": "ransomware",
+          "scenario_type": "ransomware",
+          "name": "Ransomware \u2014 Development & Cloud Operations",
+          "description": "Ransomware deployment across CI/CD pipelines, developer workstations, and cloud operations infrastructure, causing build system outages, potential source code encryption, and customer SLA breaches.",
+          "asset": "Development Infrastructure & Cloud Environments",
+          "threat_actor": "Cybercriminal Group (RaaS)",
+          "parameters": {
+            "tef": {
+              "min": 0.3,
+              "most_likely": 1.0,
+              "max": 3.0
+            },
+            "diff": {
+              "min": 0.25,
+              "most_likely": 0.48,
+              "max": 0.72
+            },
+            "vuln": {
+              "min": 0.12,
+              "most_likely": 0.25,
+              "max": 0.45
+            },
+            "asset_value": 25000000,
+            "loss_magnitude": {
+              "min": 1000000,
+              "most_likely": 4500000,
+              "max": 18000000
+            }
+          },
+          "proposed_control": {
+            "name": "Immutable Backups + Zero-Trust Network Segmentation",
+            "description": "Deploy immutable build artifact and source code backups, implement zero-trust micro-segmentation to isolate development from production environments, and extend EDR to all developer endpoints.",
+            "annual_cost": 145000,
+            "residual_ale_reduction_pct": 55
+          }
+        },
+        {
+          "id": "data-breach",
+          "scenario_type": "data-breach",
+          "name": "Data Breach \u2014 Customer Platform & Cloud Data",
+          "description": "Exposed cloud storage, misconfigured IAM, or API vulnerability leads to unauthorized access to customer data stored in the SaaS platform, triggering regulatory and contractual obligations.",
+          "asset": "SaaS Customer Data & Cloud Storage",
+          "threat_actor": "Opportunistic Attacker / Bug Hunter",
+          "parameters": {
+            "tef": {
+              "min": 0.5,
+              "most_likely": 1.5,
+              "max": 4.5
+            },
+            "diff": {
+              "min": 0.22,
+              "most_likely": 0.44,
+              "max": 0.68
+            },
+            "vuln": {
+              "min": 0.08,
+              "most_likely": 0.18,
+              "max": 0.38
+            },
+            "asset_value": 30000000,
+            "loss_magnitude": {
+              "min": 800000,
+              "most_likely": 3500000,
+              "max": 15000000
+            }
+          },
+          "proposed_control": {
+            "name": "Cloud Security Posture Mgmt + Data Security Posture Mgmt",
+            "description": "Deploy CSPM to eliminate cloud misconfigurations, implement DSPM to discover and classify sensitive customer data, and enforce least-privilege IAM with automated policy drift detection.",
+            "annual_cost": 115000,
+            "residual_ale_reduction_pct": 50
+          }
+        },
+        {
+          "id": "bec",
+          "scenario_type": "bec",
+          "name": "Business Email Compromise \u2014 Finance & Procurement",
+          "description": "Spear-phishing targeting finance or procurement staff to redirect vendor invoices or intercept software licensing payments. Often exploits remote-work email culture.",
+          "asset": "Finance & Procurement Operations",
+          "threat_actor": "Cybercriminal Fraud Ring",
+          "parameters": {
+            "tef": {
+              "min": 3.0,
+              "most_likely": 7.0,
+              "max": 16.0
+            },
+            "diff": {
+              "min": 0.35,
+              "most_likely": 0.58,
+              "max": 0.8
+            },
+            "vuln": {
+              "min": 0.03,
+              "most_likely": 0.07,
+              "max": 0.16
+            },
+            "asset_value": 5000000,
+            "loss_magnitude": {
+              "min": 100000,
+              "most_likely": 450000,
+              "max": 2000000
+            }
+          },
+          "proposed_control": {
+            "name": "Advanced Email Gateway + Executive Impersonation Detection",
+            "description": "Deploy AI-powered email security with executive impersonation detection, enforce DMARC on all company domains, and implement a two-person approval rule for wire transfers over $25K.",
+            "annual_cost": 65000,
+            "residual_ale_reduction_pct": 65
+          }
+        },
+        {
+          "id": "insider-threat",
+          "scenario_type": "insider-threat",
+          "name": "Insider Threat \u2014 IP Theft by Departing Engineer",
+          "description": "Departing software engineer or researcher exfiltrates proprietary source code, ML models, or product roadmaps before resignation, enabling competitive harm or direct sale.",
+          "asset": "Source Code, ML Models & R&D Intellectual Property",
+          "threat_actor": "Malicious Departing Employee / Competitor-Motivated Insider",
+          "parameters": {
+            "tef": {
+              "min": 0.2,
+              "most_likely": 0.6,
+              "max": 1.5
+            },
+            "diff": {
+              "min": 0.1,
+              "most_likely": 0.28,
+              "max": 0.5
+            },
+            "vuln": {
+              "min": 0.28,
+              "most_likely": 0.48,
+              "max": 0.72
+            },
+            "asset_value": 80000000,
+            "loss_magnitude": {
+              "min": 2000000,
+              "most_likely": 9000000,
+              "max": 40000000
+            }
+          },
+          "proposed_control": {
+            "name": "Source Code DLP + Git Access Reviews + UEBA",
+            "description": "Deploy code repository DLP to detect mass downloads and unusual commit patterns, enforce quarterly access reviews on all source repositories, and monitor developer behaviour with UEBA for early-warning signals.",
+            "annual_cost": 125000,
+            "residual_ale_reduction_pct": 50
+          }
+        },
+        {
+          "id": "third-party",
+          "scenario_type": "third-party",
+          "name": "Third-Party / Supply Chain \u2014 Software Dependency Compromise",
+          "description": "Malicious code injected into an open-source library, CI/CD plugin, or infrastructure-as-code module used in the build pipeline, allowing attackers to reach production customer environments.",
+          "asset": "Software Build Pipeline & Production Environment",
+          "threat_actor": "Nation-State Actor / Open-Source Poisoning Group",
+          "parameters": {
+            "tef": {
+              "min": 0.2,
+              "most_likely": 0.5,
+              "max": 1.5
+            },
+            "diff": {
+              "min": 0.15,
+              "most_likely": 0.35,
+              "max": 0.6
+            },
+            "vuln": {
+              "min": 0.2,
+              "most_likely": 0.4,
+              "max": 0.65
+            },
+            "asset_value": 50000000,
+            "loss_magnitude": {
+              "min": 3000000,
+              "most_likely": 12000000,
+              "max": 50000000
+            }
+          },
+          "proposed_control": {
+            "name": "SBOM + Software Supply Chain Security Platform",
+            "description": "Generate and continuously monitor Software Bills of Materials for all dependencies, enforce package signing and provenance verification in CI/CD, and deploy a dedicated supply chain security scanning platform.",
+            "annual_cost": 185000,
+            "residual_ale_reduction_pct": 55
+          }
+        }
+      ]
+    }
+  ]
+}

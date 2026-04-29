@@ -1,0 +1,3589 @@
+{
+  "client_id": "nexus-financial",
+  "client_name": "Nexus Financial Group",
+  "industry": "Financial Services",
+  "n_simulations": 10000,
+  "total_ale": {
+    "mean": 5696956.146454369,
+    "std": 1957893.5542861195,
+    "p10": 3490176.998574699,
+    "p25": 4295347.0268583875,
+    "p50": 5378428.879023919,
+    "p75": 6768449.723802805,
+    "p90": 8285372.652782475,
+    "p95": 9329628.265315073,
+    "p99": 11563272.57924925
+  },
+  "total_var_90": 8285372.652782475,
+  "total_annualized_loss_range": {
+    "min": 3490176.998574699,
+    "likely": 5378428.879023919,
+    "max": 8285372.652782475
+  },
+  "loss_exceedance_curve": [
+    {
+      "percentile": 0.0,
+      "loss": 1197671.932158745,
+      "exceedance_probability": 1.0
+    },
+    {
+      "percentile": 1.0,
+      "loss": 2415683.1625058465,
+      "exceedance_probability": 0.99
+    },
+    {
+      "percentile": 2.0,
+      "loss": 2650623.0424090894,
+      "exceedance_probability": 0.98
+    },
+    {
+      "percentile": 3.0,
+      "loss": 2830509.729861759,
+      "exceedance_probability": 0.97
+    },
+    {
+      "percentile": 4.0,
+      "loss": 2974210.7852950855,
+      "exceedance_probability": 0.96
+    },
+    {
+      "percentile": 5.0,
+      "loss": 3087617.054780176,
+      "exceedance_probability": 0.95
+    },
+    {
+      "percentile": 6.0,
+      "loss": 3182947.459929937,
+      "exceedance_probability": 0.94
+    },
+    {
+      "percentile": 7.0,
+      "loss": 3263633.641490254,
+      "exceedance_probability": 0.93
+    },
+    {
+      "percentile": 8.0,
+      "loss": 3346402.7663461007,
+      "exceedance_probability": 0.92
+    },
+    {
+      "percentile": 9.0,
+      "loss": 3424386.8285657065,
+      "exceedance_probability": 0.91
+    },
+    {
+      "percentile": 10.0,
+      "loss": 3490176.998574699,
+      "exceedance_probability": 0.9
+    },
+    {
+      "percentile": 11.0,
+      "loss": 3561719.09205921,
+      "exceedance_probability": 0.89
+    },
+    {
+      "percentile": 12.0,
+      "loss": 3644595.3005752773,
+      "exceedance_probability": 0.88
+    },
+    {
+      "percentile": 13.0,
+      "loss": 3698688.695708582,
+      "exceedance_probability": 0.87
+    },
+    {
+      "percentile": 14.0,
+      "loss": 3766910.8581345426,
+      "exceedance_probability": 0.86
+    },
+    {
+      "percentile": 15.0,
+      "loss": 3819637.629047059,
+      "exceedance_probability": 0.85
+    },
+    {
+      "percentile": 16.0,
+      "loss": 3886800.917498536,
+      "exceedance_probability": 0.84
+    },
+    {
+      "percentile": 17.0,
+      "loss": 3935456.1063245297,
+      "exceedance_probability": 0.83
+    },
+    {
+      "percentile": 18.0,
+      "loss": 3981240.4424663903,
+      "exceedance_probability": 0.82
+    },
+    {
+      "percentile": 19.0,
+      "loss": 4022862.6907084566,
+      "exceedance_probability": 0.81
+    },
+    {
+      "percentile": 20.0,
+      "loss": 4075170.074697706,
+      "exceedance_probability": 0.8
+    },
+    {
+      "percentile": 21.0,
+      "loss": 4129560.691757054,
+      "exceedance_probability": 0.79
+    },
+    {
+      "percentile": 22.0,
+      "loss": 4177591.048615956,
+      "exceedance_probability": 0.78
+    },
+    {
+      "percentile": 23.0,
+      "loss": 4212756.916814439,
+      "exceedance_probability": 0.77
+    },
+    {
+      "percentile": 24.0,
+      "loss": 4258156.737690033,
+      "exceedance_probability": 0.76
+    },
+    {
+      "percentile": 25.0,
+      "loss": 4295347.0268583875,
+      "exceedance_probability": 0.75
+    },
+    {
+      "percentile": 26.0,
+      "loss": 4344176.190151618,
+      "exceedance_probability": 0.74
+    },
+    {
+      "percentile": 27.0,
+      "loss": 4393570.944402842,
+      "exceedance_probability": 0.73
+    },
+    {
+      "percentile": 28.0,
+      "loss": 4431996.641912025,
+      "exceedance_probability": 0.72
+    },
+    {
+      "percentile": 29.0,
+      "loss": 4472765.303761511,
+      "exceedance_probability": 0.71
+    },
+    {
+      "percentile": 30.0,
+      "loss": 4519361.056489347,
+      "exceedance_probability": 0.7
+    },
+    {
+      "percentile": 31.0,
+      "loss": 4559122.2660661265,
+      "exceedance_probability": 0.69
+    },
+    {
+      "percentile": 32.0,
+      "loss": 4606234.815718239,
+      "exceedance_probability": 0.68
+    },
+    {
+      "percentile": 33.0,
+      "loss": 4645844.527067967,
+      "exceedance_probability": 0.67
+    },
+    {
+      "percentile": 34.0,
+      "loss": 4685219.68267153,
+      "exceedance_probability": 0.66
+    },
+    {
+      "percentile": 35.0,
+      "loss": 4732971.481359597,
+      "exceedance_probability": 0.65
+    },
+    {
+      "percentile": 36.0,
+      "loss": 4782892.481274619,
+      "exceedance_probability": 0.64
+    },
+    {
+      "percentile": 37.0,
+      "loss": 4821921.192101685,
+      "exceedance_probability": 0.63
+    },
+    {
+      "percentile": 38.0,
+      "loss": 4866273.140008497,
+      "exceedance_probability": 0.62
+    },
+    {
+      "percentile": 39.0,
+      "loss": 4915115.965060484,
+      "exceedance_probability": 0.61
+    },
+    {
+      "percentile": 40.0,
+      "loss": 4954836.211317018,
+      "exceedance_probability": 0.6
+    },
+    {
+      "percentile": 41.0,
+      "loss": 4999467.00232128,
+      "exceedance_probability": 0.59
+    },
+    {
+      "percentile": 42.0,
+      "loss": 5040998.122916262,
+      "exceedance_probability": 0.58
+    },
+    {
+      "percentile": 43.0,
+      "loss": 5081913.814977743,
+      "exceedance_probability": 0.57
+    },
+    {
+      "percentile": 44.0,
+      "loss": 5128694.420708746,
+      "exceedance_probability": 0.56
+    },
+    {
+      "percentile": 45.0,
+      "loss": 5167576.396880164,
+      "exceedance_probability": 0.55
+    },
+    {
+      "percentile": 46.0,
+      "loss": 5206090.2017004285,
+      "exceedance_probability": 0.54
+    },
+    {
+      "percentile": 47.0,
+      "loss": 5252130.473988166,
+      "exceedance_probability": 0.53
+    },
+    {
+      "percentile": 48.0,
+      "loss": 5287816.5041208435,
+      "exceedance_probability": 0.52
+    },
+    {
+      "percentile": 49.0,
+      "loss": 5335295.414234083,
+      "exceedance_probability": 0.51
+    },
+    {
+      "percentile": 50.0,
+      "loss": 5378428.879023919,
+      "exceedance_probability": 0.5
+    },
+    {
+      "percentile": 51.0,
+      "loss": 5430507.266349541,
+      "exceedance_probability": 0.49
+    },
+    {
+      "percentile": 52.0,
+      "loss": 5474416.414988299,
+      "exceedance_probability": 0.48
+    },
+    {
+      "percentile": 53.0,
+      "loss": 5513476.167811765,
+      "exceedance_probability": 0.47
+    },
+    {
+      "percentile": 54.0,
+      "loss": 5555565.957812348,
+      "exceedance_probability": 0.46
+    },
+    {
+      "percentile": 55.0,
+      "loss": 5606013.9657691335,
+      "exceedance_probability": 0.45
+    },
+    {
+      "percentile": 56.0,
+      "loss": 5657709.53131585,
+      "exceedance_probability": 0.44
+    },
+    {
+      "percentile": 57.0,
+      "loss": 5709115.602807753,
+      "exceedance_probability": 0.43
+    },
+    {
+      "percentile": 58.0,
+      "loss": 5767410.825614836,
+      "exceedance_probability": 0.42
+    },
+    {
+      "percentile": 59.0,
+      "loss": 5816418.450653807,
+      "exceedance_probability": 0.41
+    },
+    {
+      "percentile": 60.0,
+      "loss": 5871246.741742461,
+      "exceedance_probability": 0.4
+    },
+    {
+      "percentile": 61.0,
+      "loss": 5919240.942806465,
+      "exceedance_probability": 0.39
+    },
+    {
+      "percentile": 62.0,
+      "loss": 5974870.541852566,
+      "exceedance_probability": 0.38
+    },
+    {
+      "percentile": 63.0,
+      "loss": 6034130.848870332,
+      "exceedance_probability": 0.37
+    },
+    {
+      "percentile": 64.0,
+      "loss": 6085363.649974011,
+      "exceedance_probability": 0.36
+    },
+    {
+      "percentile": 65.0,
+      "loss": 6128854.557068593,
+      "exceedance_probability": 0.35
+    },
+    {
+      "percentile": 66.0,
+      "loss": 6187259.477349797,
+      "exceedance_probability": 0.34
+    },
+    {
+      "percentile": 67.0,
+      "loss": 6248941.866059834,
+      "exceedance_probability": 0.33
+    },
+    {
+      "percentile": 68.0,
+      "loss": 6313336.853489019,
+      "exceedance_probability": 0.32
+    },
+    {
+      "percentile": 69.0,
+      "loss": 6369257.055976708,
+      "exceedance_probability": 0.31
+    },
+    {
+      "percentile": 70.0,
+      "loss": 6430032.113649415,
+      "exceedance_probability": 0.3
+    },
+    {
+      "percentile": 71.0,
+      "loss": 6487660.600052205,
+      "exceedance_probability": 0.29
+    },
+    {
+      "percentile": 72.0,
+      "loss": 6560185.929432555,
+      "exceedance_probability": 0.28
+    },
+    {
+      "percentile": 73.0,
+      "loss": 6629737.463193812,
+      "exceedance_probability": 0.27
+    },
+    {
+      "percentile": 74.0,
+      "loss": 6697273.674233519,
+      "exceedance_probability": 0.26
+    },
+    {
+      "percentile": 75.0,
+      "loss": 6768449.723802805,
+      "exceedance_probability": 0.25
+    },
+    {
+      "percentile": 76.0,
+      "loss": 6851398.554159279,
+      "exceedance_probability": 0.24
+    },
+    {
+      "percentile": 77.0,
+      "loss": 6922956.59663492,
+      "exceedance_probability": 0.23
+    },
+    {
+      "percentile": 78.0,
+      "loss": 6980192.1365579935,
+      "exceedance_probability": 0.22
+    },
+    {
+      "percentile": 79.0,
+      "loss": 7064697.37345878,
+      "exceedance_probability": 0.21
+    },
+    {
+      "percentile": 80.0,
+      "loss": 7148548.401543036,
+      "exceedance_probability": 0.2
+    },
+    {
+      "percentile": 81.0,
+      "loss": 7245442.1657513715,
+      "exceedance_probability": 0.19
+    },
+    {
+      "percentile": 82.0,
+      "loss": 7333247.28968697,
+      "exceedance_probability": 0.18
+    },
+    {
+      "percentile": 83.0,
+      "loss": 7432446.699524334,
+      "exceedance_probability": 0.17
+    },
+    {
+      "percentile": 84.0,
+      "loss": 7531426.350840254,
+      "exceedance_probability": 0.16
+    },
+    {
+      "percentile": 85.0,
+      "loss": 7634134.492846225,
+      "exceedance_probability": 0.15
+    },
+    {
+      "percentile": 86.0,
+      "loss": 7751578.445917259,
+      "exceedance_probability": 0.14
+    },
+    {
+      "percentile": 87.0,
+      "loss": 7899436.910639123,
+      "exceedance_probability": 0.13
+    },
+    {
+      "percentile": 88.0,
+      "loss": 8018194.106266626,
+      "exceedance_probability": 0.12
+    },
+    {
+      "percentile": 89.0,
+      "loss": 8146990.117385062,
+      "exceedance_probability": 0.11
+    },
+    {
+      "percentile": 90.0,
+      "loss": 8285372.652782475,
+      "exceedance_probability": 0.1
+    },
+    {
+      "percentile": 91.0,
+      "loss": 8452692.115624437,
+      "exceedance_probability": 0.09
+    },
+    {
+      "percentile": 92.0,
+      "loss": 8625058.429898722,
+      "exceedance_probability": 0.08
+    },
+    {
+      "percentile": 93.0,
+      "loss": 8824086.438190514,
+      "exceedance_probability": 0.07
+    },
+    {
+      "percentile": 94.0,
+      "loss": 9067854.993009279,
+      "exceedance_probability": 0.06
+    },
+    {
+      "percentile": 95.0,
+      "loss": 9329628.265315073,
+      "exceedance_probability": 0.05
+    },
+    {
+      "percentile": 96.0,
+      "loss": 9715651.75147383,
+      "exceedance_probability": 0.04
+    },
+    {
+      "percentile": 97.0,
+      "loss": 10130746.046249576,
+      "exceedance_probability": 0.03
+    },
+    {
+      "percentile": 98.0,
+      "loss": 10651757.813686246,
+      "exceedance_probability": 0.02
+    },
+    {
+      "percentile": 99.0,
+      "loss": 11563272.57924925,
+      "exceedance_probability": 0.01
+    },
+    {
+      "percentile": 100.0,
+      "loss": 17876020.40816114,
+      "exceedance_probability": 0.0
+    }
+  ],
+  "histogram": [
+    {
+      "bin_mid": 1364455.4169187688,
+      "count": 2,
+      "frequency": 0.0002
+    },
+    {
+      "bin_mid": 1698022.3864388168,
+      "count": 9,
+      "frequency": 0.0009
+    },
+    {
+      "bin_mid": 2031589.3559588646,
+      "count": 43,
+      "frequency": 0.0043
+    },
+    {
+      "bin_mid": 2365156.3254789123,
+      "count": 95,
+      "frequency": 0.0095
+    },
+    {
+      "bin_mid": 2698723.2949989606,
+      "count": 175,
+      "frequency": 0.0175
+    },
+    {
+      "bin_mid": 3032290.2645190083,
+      "count": 299,
+      "frequency": 0.0299
+    },
+    {
+      "bin_mid": 3365857.234039056,
+      "count": 428,
+      "frequency": 0.0428
+    },
+    {
+      "bin_mid": 3699424.2035591044,
+      "count": 527,
+      "frequency": 0.0527
+    },
+    {
+      "bin_mid": 4032991.1730791517,
+      "count": 688,
+      "frequency": 0.0688
+    },
+    {
+      "bin_mid": 4366558.142599199,
+      "count": 772,
+      "frequency": 0.0772
+    },
+    {
+      "bin_mid": 4700125.112119248,
+      "count": 763,
+      "frequency": 0.0763
+    },
+    {
+      "bin_mid": 5033692.081639295,
+      "count": 792,
+      "frequency": 0.0792
+    },
+    {
+      "bin_mid": 5367259.051159343,
+      "count": 754,
+      "frequency": 0.0754
+    },
+    {
+      "bin_mid": 5700826.020679392,
+      "count": 646,
+      "frequency": 0.0646
+    },
+    {
+      "bin_mid": 6034392.990199439,
+      "count": 637,
+      "frequency": 0.0637
+    },
+    {
+      "bin_mid": 6367959.959719487,
+      "count": 531,
+      "frequency": 0.0531
+    },
+    {
+      "bin_mid": 6701526.929239536,
+      "count": 464,
+      "frequency": 0.0464
+    },
+    {
+      "bin_mid": 7035093.898759583,
+      "count": 436,
+      "frequency": 0.0436
+    },
+    {
+      "bin_mid": 7368660.86827963,
+      "count": 342,
+      "frequency": 0.0342
+    },
+    {
+      "bin_mid": 7702227.837799679,
+      "count": 277,
+      "frequency": 0.0277
+    },
+    {
+      "bin_mid": 8035794.807319727,
+      "count": 261,
+      "frequency": 0.0261
+    },
+    {
+      "bin_mid": 8369361.776839774,
+      "count": 214,
+      "frequency": 0.0214
+    },
+    {
+      "bin_mid": 8702928.746359821,
+      "count": 165,
+      "frequency": 0.0165
+    },
+    {
+      "bin_mid": 9036495.715879869,
+      "count": 133,
+      "frequency": 0.0133
+    },
+    {
+      "bin_mid": 9370062.68539992,
+      "count": 105,
+      "frequency": 0.0105
+    },
+    {
+      "bin_mid": 9703629.654919967,
+      "count": 87,
+      "frequency": 0.0087
+    },
+    {
+      "bin_mid": 10037196.624440014,
+      "count": 68,
+      "frequency": 0.0068
+    },
+    {
+      "bin_mid": 10370763.593960062,
+      "count": 66,
+      "frequency": 0.0066
+    },
+    {
+      "bin_mid": 10704330.563480109,
+      "count": 54,
+      "frequency": 0.0054
+    },
+    {
+      "bin_mid": 11037897.533000156,
+      "count": 34,
+      "frequency": 0.0034
+    },
+    {
+      "bin_mid": 11371464.502520205,
+      "count": 28,
+      "frequency": 0.0028
+    },
+    {
+      "bin_mid": 11705031.472040255,
+      "count": 18,
+      "frequency": 0.0018
+    },
+    {
+      "bin_mid": 12038598.441560302,
+      "count": 14,
+      "frequency": 0.0014
+    },
+    {
+      "bin_mid": 12372165.41108035,
+      "count": 13,
+      "frequency": 0.0013
+    },
+    {
+      "bin_mid": 12705732.380600397,
+      "count": 18,
+      "frequency": 0.0018
+    },
+    {
+      "bin_mid": 13039299.350120444,
+      "count": 7,
+      "frequency": 0.0007
+    },
+    {
+      "bin_mid": 13372866.319640493,
+      "count": 15,
+      "frequency": 0.0015
+    },
+    {
+      "bin_mid": 13706433.289160542,
+      "count": 3,
+      "frequency": 0.0003
+    },
+    {
+      "bin_mid": 14040000.25868059,
+      "count": 2,
+      "frequency": 0.0002
+    },
+    {
+      "bin_mid": 14373567.228200637,
+      "count": 2,
+      "frequency": 0.0002
+    },
+    {
+      "bin_mid": 14707134.197720684,
+      "count": 2,
+      "frequency": 0.0002
+    },
+    {
+      "bin_mid": 15040701.167240731,
+      "count": 3,
+      "frequency": 0.0003
+    },
+    {
+      "bin_mid": 15374268.136760779,
+      "count": 0,
+      "frequency": 0.0
+    },
+    {
+      "bin_mid": 15707835.106280828,
+      "count": 3,
+      "frequency": 0.0003
+    },
+    {
+      "bin_mid": 16041402.075800877,
+      "count": 1,
+      "frequency": 0.0001
+    },
+    {
+      "bin_mid": 16374969.045320924,
+      "count": 2,
+      "frequency": 0.0002
+    },
+    {
+      "bin_mid": 16708536.014840972,
+      "count": 1,
+      "frequency": 0.0001
+    },
+    {
+      "bin_mid": 17042102.98436102,
+      "count": 0,
+      "frequency": 0.0
+    },
+    {
+      "bin_mid": 17375669.953881066,
+      "count": 0,
+      "frequency": 0.0
+    },
+    {
+      "bin_mid": 17709236.923401117,
+      "count": 1,
+      "frequency": 0.0001
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "ransomware",
+      "scenario_name": "Ransomware \u2014 Core Banking Infrastructure",
+      "scenario_type": "ransomware",
+      "asset": "Core Banking & Payment Systems",
+      "threat_actor": "Organized Cybercriminal Group (RaaS)",
+      "description": "Threat actor deploys ransomware targeting core banking and payment processing systems, causing multi-day operational outage, recovery costs, and potential regulatory fines.",
+      "asset_value": 55000000.0,
+      "ale": {
+        "mean": 1172616.0268766272,
+        "std": 699314.5657526291,
+        "p10": 452572.7166535147,
+        "p25": 661239.3692260899,
+        "p50": 1010866.8225732141,
+        "p75": 1510716.380357267,
+        "p90": 2117700.899321071,
+        "p95": 2522169.53039941,
+        "p99": 3459068.4763330757
+      },
+      "var_90": 2117700.899321071,
+      "annualized_loss_range": {
+        "min": 452572.7166535147,
+        "likely": 1010866.8225732141,
+        "max": 2117700.899321071
+      },
+      "lef": {
+        "mean": 1.2812158029083107,
+        "p50": 1.1936454464811597,
+        "p90": 1.9866386221091341
+      },
+      "loss_magnitude": {
+        "mean": 914073.4393083887,
+        "p50": 878261.625271557
+      },
+      "effective_vuln": {
+        "mean": 0.11778057188855433,
+        "p50": 0.1137052128650807
+      },
+      "diff_mean": 0.6278196127209914,
+      "vuln_mean": 0.3165022252098991,
+      "loss_exceedance_curve": [
+        {
+          "percentile": 0.0,
+          "loss": 97126.05037863692,
+          "exceedance_probability": 1.0
+        },
+        {
+          "percentile": 1.0,
+          "loss": 237944.44796417071,
+          "exceedance_probability": 0.99
+        },
+        {
+          "percentile": 2.0,
+          "loss": 280351.11539325106,
+          "exceedance_probability": 0.98
+        },
+        {
+          "percentile": 3.0,
+          "loss": 313115.466332747,
+          "exceedance_probability": 0.97
+        },
+        {
+          "percentile": 4.0,
+          "loss": 337872.54967163544,
+          "exceedance_probability": 0.96
+        },
+        {
+          "percentile": 5.0,
+          "loss": 361530.67550685466,
+          "exceedance_probability": 0.95
+        },
+        {
+          "percentile": 6.0,
+          "loss": 380393.5546322379,
+          "exceedance_probability": 0.94
+        },
+        {
+          "percentile": 7.0,
+          "loss": 400573.1557983822,
+          "exceedance_probability": 0.93
+        },
+        {
+          "percentile": 8.0,
+          "loss": 420062.828535723,
+          "exceedance_probability": 0.92
+        },
+        {
+          "percentile": 9.0,
+          "loss": 436219.2473338045,
+          "exceedance_probability": 0.91
+        },
+        {
+          "percentile": 10.0,
+          "loss": 452572.7166535147,
+          "exceedance_probability": 0.9
+        },
+        {
+          "percentile": 11.0,
+          "loss": 468749.8569591436,
+          "exceedance_probability": 0.89
+        },
+        {
+          "percentile": 12.0,
+          "loss": 482384.2152427374,
+          "exceedance_probability": 0.88
+        },
+        {
+          "percentile": 13.0,
+          "loss": 498505.4659976987,
+          "exceedance_probability": 0.87
+        },
+        {
+          "percentile": 14.0,
+          "loss": 514691.82394908636,
+          "exceedance_probability": 0.86
+        },
+        {
+          "percentile": 15.0,
+          "loss": 526919.9440771354,
+          "exceedance_probability": 0.85
+        },
+        {
+          "percentile": 16.0,
+          "loss": 541604.5959624791,
+          "exceedance_probability": 0.84
+        },
+        {
+          "percentile": 17.0,
+          "loss": 556523.6472804223,
+          "exceedance_probability": 0.83
+        },
+        {
+          "percentile": 18.0,
+          "loss": 568371.8247704644,
+          "exceedance_probability": 0.82
+        },
+        {
+          "percentile": 19.0,
+          "loss": 582326.7329659375,
+          "exceedance_probability": 0.81
+        },
+        {
+          "percentile": 20.0,
+          "loss": 592548.9670914337,
+          "exceedance_probability": 0.8
+        },
+        {
+          "percentile": 21.0,
+          "loss": 607497.6138366896,
+          "exceedance_probability": 0.79
+        },
+        {
+          "percentile": 22.0,
+          "loss": 619260.6738711665,
+          "exceedance_probability": 0.78
+        },
+        {
+          "percentile": 23.0,
+          "loss": 631822.1709534158,
+          "exceedance_probability": 0.77
+        },
+        {
+          "percentile": 24.0,
+          "loss": 646418.7157652796,
+          "exceedance_probability": 0.76
+        },
+        {
+          "percentile": 25.0,
+          "loss": 661239.3692260899,
+          "exceedance_probability": 0.75
+        },
+        {
+          "percentile": 26.0,
+          "loss": 674824.254251081,
+          "exceedance_probability": 0.74
+        },
+        {
+          "percentile": 27.0,
+          "loss": 687035.5565620231,
+          "exceedance_probability": 0.73
+        },
+        {
+          "percentile": 28.0,
+          "loss": 698394.0010008995,
+          "exceedance_probability": 0.72
+        },
+        {
+          "percentile": 29.0,
+          "loss": 712083.4532026597,
+          "exceedance_probability": 0.71
+        },
+        {
+          "percentile": 30.0,
+          "loss": 727732.3640813953,
+          "exceedance_probability": 0.7
+        },
+        {
+          "percentile": 31.0,
+          "loss": 740052.5444396305,
+          "exceedance_probability": 0.69
+        },
+        {
+          "percentile": 32.0,
+          "loss": 753214.1031091288,
+          "exceedance_probability": 0.68
+        },
+        {
+          "percentile": 33.0,
+          "loss": 764368.7125625374,
+          "exceedance_probability": 0.67
+        },
+        {
+          "percentile": 34.0,
+          "loss": 778607.3250338885,
+          "exceedance_probability": 0.66
+        },
+        {
+          "percentile": 35.0,
+          "loss": 792465.6126030104,
+          "exceedance_probability": 0.65
+        },
+        {
+          "percentile": 36.0,
+          "loss": 805319.6880070837,
+          "exceedance_probability": 0.64
+        },
+        {
+          "percentile": 37.0,
+          "loss": 819824.4581855903,
+          "exceedance_probability": 0.63
+        },
+        {
+          "percentile": 38.0,
+          "loss": 833770.0111581354,
+          "exceedance_probability": 0.62
+        },
+        {
+          "percentile": 39.0,
+          "loss": 848029.4564370252,
+          "exceedance_probability": 0.61
+        },
+        {
+          "percentile": 40.0,
+          "loss": 862179.8165294951,
+          "exceedance_probability": 0.6
+        },
+        {
+          "percentile": 41.0,
+          "loss": 877203.7417320893,
+          "exceedance_probability": 0.59
+        },
+        {
+          "percentile": 42.0,
+          "loss": 890555.9511984242,
+          "exceedance_probability": 0.58
+        },
+        {
+          "percentile": 43.0,
+          "loss": 904419.3046293264,
+          "exceedance_probability": 0.57
+        },
+        {
+          "percentile": 44.0,
+          "loss": 918903.3855931932,
+          "exceedance_probability": 0.56
+        },
+        {
+          "percentile": 45.0,
+          "loss": 936130.0836942483,
+          "exceedance_probability": 0.55
+        },
+        {
+          "percentile": 46.0,
+          "loss": 951829.913585923,
+          "exceedance_probability": 0.54
+        },
+        {
+          "percentile": 47.0,
+          "loss": 968954.7056895974,
+          "exceedance_probability": 0.53
+        },
+        {
+          "percentile": 48.0,
+          "loss": 983866.7463209584,
+          "exceedance_probability": 0.52
+        },
+        {
+          "percentile": 49.0,
+          "loss": 997158.0479568017,
+          "exceedance_probability": 0.51
+        },
+        {
+          "percentile": 50.0,
+          "loss": 1010866.8225732141,
+          "exceedance_probability": 0.5
+        },
+        {
+          "percentile": 51.0,
+          "loss": 1027352.0556003432,
+          "exceedance_probability": 0.49
+        },
+        {
+          "percentile": 52.0,
+          "loss": 1046246.0033150379,
+          "exceedance_probability": 0.48
+        },
+        {
+          "percentile": 53.0,
+          "loss": 1065555.1460698436,
+          "exceedance_probability": 0.47
+        },
+        {
+          "percentile": 54.0,
+          "loss": 1082332.6215567735,
+          "exceedance_probability": 0.46
+        },
+        {
+          "percentile": 55.0,
+          "loss": 1099497.7254859728,
+          "exceedance_probability": 0.45
+        },
+        {
+          "percentile": 56.0,
+          "loss": 1114072.3413445486,
+          "exceedance_probability": 0.44
+        },
+        {
+          "percentile": 57.0,
+          "loss": 1133197.2450342253,
+          "exceedance_probability": 0.43
+        },
+        {
+          "percentile": 58.0,
+          "loss": 1149169.24308356,
+          "exceedance_probability": 0.42
+        },
+        {
+          "percentile": 59.0,
+          "loss": 1163845.2831529046,
+          "exceedance_probability": 0.41
+        },
+        {
+          "percentile": 60.0,
+          "loss": 1180594.2413781185,
+          "exceedance_probability": 0.4
+        },
+        {
+          "percentile": 61.0,
+          "loss": 1200637.4653065319,
+          "exceedance_probability": 0.39
+        },
+        {
+          "percentile": 62.0,
+          "loss": 1222290.2599537226,
+          "exceedance_probability": 0.38
+        },
+        {
+          "percentile": 63.0,
+          "loss": 1240814.1484232103,
+          "exceedance_probability": 0.37
+        },
+        {
+          "percentile": 64.0,
+          "loss": 1257253.9686097011,
+          "exceedance_probability": 0.36
+        },
+        {
+          "percentile": 65.0,
+          "loss": 1277839.4064321376,
+          "exceedance_probability": 0.35
+        },
+        {
+          "percentile": 66.0,
+          "loss": 1299648.4732839414,
+          "exceedance_probability": 0.34
+        },
+        {
+          "percentile": 67.0,
+          "loss": 1323072.2040125455,
+          "exceedance_probability": 0.33
+        },
+        {
+          "percentile": 68.0,
+          "loss": 1341908.1493139756,
+          "exceedance_probability": 0.32
+        },
+        {
+          "percentile": 69.0,
+          "loss": 1364356.7200117728,
+          "exceedance_probability": 0.31
+        },
+        {
+          "percentile": 70.0,
+          "loss": 1388261.8038420372,
+          "exceedance_probability": 0.3
+        },
+        {
+          "percentile": 71.0,
+          "loss": 1413444.437676786,
+          "exceedance_probability": 0.29
+        },
+        {
+          "percentile": 72.0,
+          "loss": 1437277.5192591096,
+          "exceedance_probability": 0.28
+        },
+        {
+          "percentile": 73.0,
+          "loss": 1461747.273219373,
+          "exceedance_probability": 0.27
+        },
+        {
+          "percentile": 74.0,
+          "loss": 1484079.0021132587,
+          "exceedance_probability": 0.26
+        },
+        {
+          "percentile": 75.0,
+          "loss": 1510716.380357267,
+          "exceedance_probability": 0.25
+        },
+        {
+          "percentile": 76.0,
+          "loss": 1537956.4354436256,
+          "exceedance_probability": 0.24
+        },
+        {
+          "percentile": 77.0,
+          "loss": 1566523.6657164057,
+          "exceedance_probability": 0.23
+        },
+        {
+          "percentile": 78.0,
+          "loss": 1596008.464885745,
+          "exceedance_probability": 0.22
+        },
+        {
+          "percentile": 79.0,
+          "loss": 1629595.1464239943,
+          "exceedance_probability": 0.21
+        },
+        {
+          "percentile": 80.0,
+          "loss": 1659787.2276519332,
+          "exceedance_probability": 0.2
+        },
+        {
+          "percentile": 81.0,
+          "loss": 1696607.3902422248,
+          "exceedance_probability": 0.19
+        },
+        {
+          "percentile": 82.0,
+          "loss": 1735324.2363979067,
+          "exceedance_probability": 0.18
+        },
+        {
+          "percentile": 83.0,
+          "loss": 1777964.0041743806,
+          "exceedance_probability": 0.17
+        },
+        {
+          "percentile": 84.0,
+          "loss": 1813787.1536316536,
+          "exceedance_probability": 0.16
+        },
+        {
+          "percentile": 85.0,
+          "loss": 1853487.2171641306,
+          "exceedance_probability": 0.15
+        },
+        {
+          "percentile": 86.0,
+          "loss": 1896452.0900566336,
+          "exceedance_probability": 0.14
+        },
+        {
+          "percentile": 87.0,
+          "loss": 1943237.4270362603,
+          "exceedance_probability": 0.13
+        },
+        {
+          "percentile": 88.0,
+          "loss": 2001575.9953321633,
+          "exceedance_probability": 0.12
+        },
+        {
+          "percentile": 89.0,
+          "loss": 2054670.5935892742,
+          "exceedance_probability": 0.11
+        },
+        {
+          "percentile": 90.0,
+          "loss": 2117700.899321071,
+          "exceedance_probability": 0.1
+        },
+        {
+          "percentile": 91.0,
+          "loss": 2183455.7723927842,
+          "exceedance_probability": 0.09
+        },
+        {
+          "percentile": 92.0,
+          "loss": 2254362.3864894635,
+          "exceedance_probability": 0.08
+        },
+        {
+          "percentile": 93.0,
+          "loss": 2333772.6064806147,
+          "exceedance_probability": 0.07
+        },
+        {
+          "percentile": 94.0,
+          "loss": 2415750.2557667843,
+          "exceedance_probability": 0.06
+        },
+        {
+          "percentile": 95.0,
+          "loss": 2522169.53039941,
+          "exceedance_probability": 0.05
+        },
+        {
+          "percentile": 96.0,
+          "loss": 2657237.392431011,
+          "exceedance_probability": 0.04
+        },
+        {
+          "percentile": 97.0,
+          "loss": 2831627.3331615077,
+          "exceedance_probability": 0.03
+        },
+        {
+          "percentile": 98.0,
+          "loss": 3017437.2366896765,
+          "exceedance_probability": 0.02
+        },
+        {
+          "percentile": 99.0,
+          "loss": 3459068.4763330757,
+          "exceedance_probability": 0.01
+        },
+        {
+          "percentile": 100.0,
+          "loss": 6095939.018339454,
+          "exceedance_probability": 0.0
+        }
+      ],
+      "contribution_pct": 20.6,
+      "control_benefit": {
+        "name": "Enhanced EDR + 24/7 MDR Retainer",
+        "description": "Deploy next-gen endpoint detection & response across all servers and workstations with a 24/7 managed detection and response retainer and pre-negotiated IR playbook.",
+        "annual_cost": 180000.0,
+        "ale_reduction_pct": 55.0,
+        "residual_ale_mean": 527677.2120944822,
+        "residual_var_90": 952965.4046944818,
+        "ale_reduction": 644938.8147821451,
+        "net_annual_benefit": 464938.8147821451,
+        "roi_pct": 258.3,
+        "payback_months": 3.3
+      }
+    },
+    {
+      "scenario_id": "data-breach",
+      "scenario_name": "Data Breach \u2014 Customer PII & Financial Records",
+      "scenario_type": "data-breach",
+      "asset": "Customer Database (PII, Account Data)",
+      "threat_actor": "Advanced Persistent Threat / Credential-Based Attacker",
+      "description": "Unauthorized exfiltration of customer personally identifiable information and financial records via compromised credentials or SQL injection, triggering regulatory penalties and litigation.",
+      "asset_value": 40000000.0,
+      "ale": {
+        "mean": 2037016.0058690284,
+        "std": 1432511.2488327627,
+        "p10": 641956.565434862,
+        "p25": 1020259.1371232889,
+        "p50": 1676770.9282599627,
+        "p75": 2665116.3789265924,
+        "p90": 3921620.2741892156,
+        "p95": 4799193.2250735145,
+        "p99": 7004190.836791065
+      },
+      "var_90": 3921620.2741892156,
+      "annualized_loss_range": {
+        "min": 641956.565434862,
+        "likely": 1676770.9282599627,
+        "max": 3921620.2741892156
+      },
+      "lef": {
+        "mean": 0.09659664208215317,
+        "p50": 0.08692897394235305,
+        "p90": 0.1627304155416541
+      },
+      "loss_magnitude": {
+        "mean": 21102738.70638615,
+        "p50": 19950449.088576116
+      },
+      "effective_vuln": {
+        "mean": 0.1019562496178735,
+        "p50": 0.09791208725001932
+      },
+      "diff_mean": 0.48163101340699777,
+      "vuln_mean": 0.19680164208326464,
+      "loss_exceedance_curve": [
+        {
+          "percentile": 0.0,
+          "loss": 120581.4038778815,
+          "exceedance_probability": 1.0
+        },
+        {
+          "percentile": 1.0,
+          "loss": 286335.3935994266,
+          "exceedance_probability": 0.99
+        },
+        {
+          "percentile": 2.0,
+          "loss": 361346.53833768005,
+          "exceedance_probability": 0.98
+        },
+        {
+          "percentile": 3.0,
+          "loss": 405374.4465464084,
+          "exceedance_probability": 0.97
+        },
+        {
+          "percentile": 4.0,
+          "loss": 450406.4631928075,
+          "exceedance_probability": 0.96
+        },
+        {
+          "percentile": 5.0,
+          "loss": 488167.3659628799,
+          "exceedance_probability": 0.95
+        },
+        {
+          "percentile": 6.0,
+          "loss": 519910.94318248035,
+          "exceedance_probability": 0.94
+        },
+        {
+          "percentile": 7.0,
+          "loss": 553295.2732433333,
+          "exceedance_probability": 0.93
+        },
+        {
+          "percentile": 8.0,
+          "loss": 584110.89267686,
+          "exceedance_probability": 0.92
+        },
+        {
+          "percentile": 9.0,
+          "loss": 615502.6871645954,
+          "exceedance_probability": 0.91
+        },
+        {
+          "percentile": 10.0,
+          "loss": 641956.565434862,
+          "exceedance_probability": 0.9
+        },
+        {
+          "percentile": 11.0,
+          "loss": 667922.797070187,
+          "exceedance_probability": 0.89
+        },
+        {
+          "percentile": 12.0,
+          "loss": 696388.7129286387,
+          "exceedance_probability": 0.88
+        },
+        {
+          "percentile": 13.0,
+          "loss": 723236.3901423425,
+          "exceedance_probability": 0.87
+        },
+        {
+          "percentile": 14.0,
+          "loss": 745666.7446489019,
+          "exceedance_probability": 0.86
+        },
+        {
+          "percentile": 15.0,
+          "loss": 769265.1514230296,
+          "exceedance_probability": 0.85
+        },
+        {
+          "percentile": 16.0,
+          "loss": 792155.1029964564,
+          "exceedance_probability": 0.84
+        },
+        {
+          "percentile": 17.0,
+          "loss": 816767.9062091734,
+          "exceedance_probability": 0.83
+        },
+        {
+          "percentile": 18.0,
+          "loss": 842836.1866030692,
+          "exceedance_probability": 0.82
+        },
+        {
+          "percentile": 19.0,
+          "loss": 864242.6787958541,
+          "exceedance_probability": 0.81
+        },
+        {
+          "percentile": 20.0,
+          "loss": 893298.1832227391,
+          "exceedance_probability": 0.8
+        },
+        {
+          "percentile": 21.0,
+          "loss": 918759.5547229234,
+          "exceedance_probability": 0.79
+        },
+        {
+          "percentile": 22.0,
+          "loss": 941680.6799349411,
+          "exceedance_probability": 0.78
+        },
+        {
+          "percentile": 23.0,
+          "loss": 966287.4368562961,
+          "exceedance_probability": 0.77
+        },
+        {
+          "percentile": 24.0,
+          "loss": 994327.2130320534,
+          "exceedance_probability": 0.76
+        },
+        {
+          "percentile": 25.0,
+          "loss": 1020259.1371232889,
+          "exceedance_probability": 0.75
+        },
+        {
+          "percentile": 26.0,
+          "loss": 1044525.7339167185,
+          "exceedance_probability": 0.74
+        },
+        {
+          "percentile": 27.0,
+          "loss": 1068592.6337914234,
+          "exceedance_probability": 0.73
+        },
+        {
+          "percentile": 28.0,
+          "loss": 1095572.023446505,
+          "exceedance_probability": 0.72
+        },
+        {
+          "percentile": 29.0,
+          "loss": 1118187.781568694,
+          "exceedance_probability": 0.71
+        },
+        {
+          "percentile": 30.0,
+          "loss": 1140635.5055593003,
+          "exceedance_probability": 0.7
+        },
+        {
+          "percentile": 31.0,
+          "loss": 1167480.1488414598,
+          "exceedance_probability": 0.69
+        },
+        {
+          "percentile": 32.0,
+          "loss": 1190205.0457958104,
+          "exceedance_probability": 0.68
+        },
+        {
+          "percentile": 33.0,
+          "loss": 1214686.7648599073,
+          "exceedance_probability": 0.67
+        },
+        {
+          "percentile": 34.0,
+          "loss": 1243630.301139117,
+          "exceedance_probability": 0.66
+        },
+        {
+          "percentile": 35.0,
+          "loss": 1268733.5757665834,
+          "exceedance_probability": 0.65
+        },
+        {
+          "percentile": 36.0,
+          "loss": 1296112.2847557734,
+          "exceedance_probability": 0.64
+        },
+        {
+          "percentile": 37.0,
+          "loss": 1320781.2437605502,
+          "exceedance_probability": 0.63
+        },
+        {
+          "percentile": 38.0,
+          "loss": 1345595.3337680236,
+          "exceedance_probability": 0.62
+        },
+        {
+          "percentile": 39.0,
+          "loss": 1369801.4755434545,
+          "exceedance_probability": 0.61
+        },
+        {
+          "percentile": 40.0,
+          "loss": 1394050.4208969595,
+          "exceedance_probability": 0.6
+        },
+        {
+          "percentile": 41.0,
+          "loss": 1416837.8756694496,
+          "exceedance_probability": 0.59
+        },
+        {
+          "percentile": 42.0,
+          "loss": 1442970.4438905346,
+          "exceedance_probability": 0.58
+        },
+        {
+          "percentile": 43.0,
+          "loss": 1466949.623343105,
+          "exceedance_probability": 0.57
+        },
+        {
+          "percentile": 44.0,
+          "loss": 1496699.8766385347,
+          "exceedance_probability": 0.56
+        },
+        {
+          "percentile": 45.0,
+          "loss": 1522911.515958783,
+          "exceedance_probability": 0.55
+        },
+        {
+          "percentile": 46.0,
+          "loss": 1550713.2888866921,
+          "exceedance_probability": 0.54
+        },
+        {
+          "percentile": 47.0,
+          "loss": 1580283.3490827063,
+          "exceedance_probability": 0.53
+        },
+        {
+          "percentile": 48.0,
+          "loss": 1610796.263622993,
+          "exceedance_probability": 0.52
+        },
+        {
+          "percentile": 49.0,
+          "loss": 1644072.6974845408,
+          "exceedance_probability": 0.51
+        },
+        {
+          "percentile": 50.0,
+          "loss": 1676770.9282599627,
+          "exceedance_probability": 0.5
+        },
+        {
+          "percentile": 51.0,
+          "loss": 1704088.5524068617,
+          "exceedance_probability": 0.49
+        },
+        {
+          "percentile": 52.0,
+          "loss": 1740083.8410569793,
+          "exceedance_probability": 0.48
+        },
+        {
+          "percentile": 53.0,
+          "loss": 1768368.6357017846,
+          "exceedance_probability": 0.47
+        },
+        {
+          "percentile": 54.0,
+          "loss": 1804463.2551949352,
+          "exceedance_probability": 0.46
+        },
+        {
+          "percentile": 55.0,
+          "loss": 1834956.8675342572,
+          "exceedance_probability": 0.45
+        },
+        {
+          "percentile": 56.0,
+          "loss": 1871267.9998891505,
+          "exceedance_probability": 0.44
+        },
+        {
+          "percentile": 57.0,
+          "loss": 1904693.7237483354,
+          "exceedance_probability": 0.43
+        },
+        {
+          "percentile": 58.0,
+          "loss": 1939595.9064199945,
+          "exceedance_probability": 0.42
+        },
+        {
+          "percentile": 59.0,
+          "loss": 1969144.265933486,
+          "exceedance_probability": 0.41
+        },
+        {
+          "percentile": 60.0,
+          "loss": 2004839.7855606233,
+          "exceedance_probability": 0.4
+        },
+        {
+          "percentile": 61.0,
+          "loss": 2036917.833249267,
+          "exceedance_probability": 0.39
+        },
+        {
+          "percentile": 62.0,
+          "loss": 2076465.8721026294,
+          "exceedance_probability": 0.38
+        },
+        {
+          "percentile": 63.0,
+          "loss": 2113131.517803877,
+          "exceedance_probability": 0.37
+        },
+        {
+          "percentile": 64.0,
+          "loss": 2148012.384267283,
+          "exceedance_probability": 0.36
+        },
+        {
+          "percentile": 65.0,
+          "loss": 2183726.1008431506,
+          "exceedance_probability": 0.35
+        },
+        {
+          "percentile": 66.0,
+          "loss": 2226134.9057780523,
+          "exceedance_probability": 0.34
+        },
+        {
+          "percentile": 67.0,
+          "loss": 2267438.8768066727,
+          "exceedance_probability": 0.33
+        },
+        {
+          "percentile": 68.0,
+          "loss": 2309382.0889275144,
+          "exceedance_probability": 0.32
+        },
+        {
+          "percentile": 69.0,
+          "loss": 2352018.314142898,
+          "exceedance_probability": 0.31
+        },
+        {
+          "percentile": 70.0,
+          "loss": 2392556.935466909,
+          "exceedance_probability": 0.3
+        },
+        {
+          "percentile": 71.0,
+          "loss": 2442368.467377656,
+          "exceedance_probability": 0.29
+        },
+        {
+          "percentile": 72.0,
+          "loss": 2501159.301503142,
+          "exceedance_probability": 0.28
+        },
+        {
+          "percentile": 73.0,
+          "loss": 2551885.0588593227,
+          "exceedance_probability": 0.27
+        },
+        {
+          "percentile": 74.0,
+          "loss": 2612542.718063794,
+          "exceedance_probability": 0.26
+        },
+        {
+          "percentile": 75.0,
+          "loss": 2665116.3789265924,
+          "exceedance_probability": 0.25
+        },
+        {
+          "percentile": 76.0,
+          "loss": 2721480.744618503,
+          "exceedance_probability": 0.24
+        },
+        {
+          "percentile": 77.0,
+          "loss": 2767586.2743304004,
+          "exceedance_probability": 0.23
+        },
+        {
+          "percentile": 78.0,
+          "loss": 2829382.616949781,
+          "exceedance_probability": 0.22
+        },
+        {
+          "percentile": 79.0,
+          "loss": 2889029.755421539,
+          "exceedance_probability": 0.21
+        },
+        {
+          "percentile": 80.0,
+          "loss": 2955025.766030932,
+          "exceedance_probability": 0.2
+        },
+        {
+          "percentile": 81.0,
+          "loss": 3027616.946561819,
+          "exceedance_probability": 0.19
+        },
+        {
+          "percentile": 82.0,
+          "loss": 3106926.062562831,
+          "exceedance_probability": 0.18
+        },
+        {
+          "percentile": 83.0,
+          "loss": 3186433.4797565043,
+          "exceedance_probability": 0.17
+        },
+        {
+          "percentile": 84.0,
+          "loss": 3271243.33728951,
+          "exceedance_probability": 0.16
+        },
+        {
+          "percentile": 85.0,
+          "loss": 3351643.2663665754,
+          "exceedance_probability": 0.15
+        },
+        {
+          "percentile": 86.0,
+          "loss": 3452642.861911075,
+          "exceedance_probability": 0.14
+        },
+        {
+          "percentile": 87.0,
+          "loss": 3553726.531084725,
+          "exceedance_probability": 0.13
+        },
+        {
+          "percentile": 88.0,
+          "loss": 3669219.7671456407,
+          "exceedance_probability": 0.12
+        },
+        {
+          "percentile": 89.0,
+          "loss": 3792162.3407313526,
+          "exceedance_probability": 0.11
+        },
+        {
+          "percentile": 90.0,
+          "loss": 3921620.2741892156,
+          "exceedance_probability": 0.1
+        },
+        {
+          "percentile": 91.0,
+          "loss": 4049509.3481413247,
+          "exceedance_probability": 0.09
+        },
+        {
+          "percentile": 92.0,
+          "loss": 4164641.6972731925,
+          "exceedance_probability": 0.08
+        },
+        {
+          "percentile": 93.0,
+          "loss": 4340302.166201976,
+          "exceedance_probability": 0.07
+        },
+        {
+          "percentile": 94.0,
+          "loss": 4539648.189196411,
+          "exceedance_probability": 0.06
+        },
+        {
+          "percentile": 95.0,
+          "loss": 4799193.2250735145,
+          "exceedance_probability": 0.05
+        },
+        {
+          "percentile": 96.0,
+          "loss": 5112528.093501051,
+          "exceedance_probability": 0.04
+        },
+        {
+          "percentile": 97.0,
+          "loss": 5554155.378381279,
+          "exceedance_probability": 0.03
+        },
+        {
+          "percentile": 98.0,
+          "loss": 6119405.656774944,
+          "exceedance_probability": 0.02
+        },
+        {
+          "percentile": 99.0,
+          "loss": 7004190.836791065,
+          "exceedance_probability": 0.01
+        },
+        {
+          "percentile": 100.0,
+          "loss": 13460577.352438616,
+          "exceedance_probability": 0.0
+        }
+      ],
+      "contribution_pct": 35.8,
+      "control_benefit": {
+        "name": "CASB + DLP + Privileged Access Management",
+        "description": "Implement Cloud Access Security Broker, enterprise Data Loss Prevention, and Privileged Access Management to reduce data exfiltration risk and limit blast radius of credential compromise.",
+        "annual_cost": 240000.0,
+        "ale_reduction_pct": 50.0,
+        "residual_ale_mean": 1018508.0029345142,
+        "residual_var_90": 1960810.1370946078,
+        "ale_reduction": 1018508.0029345142,
+        "net_annual_benefit": 778508.0029345142,
+        "roi_pct": 324.4,
+        "payback_months": 2.8
+      }
+    },
+    {
+      "scenario_id": "bec",
+      "scenario_name": "Business Email Compromise \u2014 Wire Fraud",
+      "scenario_type": "bec",
+      "asset": "Treasury & Accounts Payable Operations",
+      "threat_actor": "Cybercriminal Fraud Ring",
+      "description": "Social engineering attack targeting treasury and finance staff to authorise fraudulent wire transfers to attacker-controlled accounts. High frequency, low per-event success rate.",
+      "asset_value": 8000000.0,
+      "ale": {
+        "mean": 328480.311383548,
+        "std": 244910.90342293377,
+        "p10": 98341.8309940218,
+        "p25": 157630.3000334098,
+        "p50": 264737.00652309397,
+        "p75": 426189.3328570379,
+        "p90": 641249.8496664794,
+        "p95": 808476.2646947408,
+        "p99": 1205382.4099212
+      },
+      "var_90": 641249.8496664794,
+      "annualized_loss_range": {
+        "min": 98341.8309940218,
+        "likely": 264737.00652309397,
+        "max": 641249.8496664794
+      },
+      "lef": {
+        "mean": 0.265115758343024,
+        "p50": 0.23804376766185248,
+        "p90": 0.4441352477519394
+      },
+      "loss_magnitude": {
+        "mean": 1235942.996900826,
+        "p50": 1148551.8013219582
+      },
+      "effective_vuln": {
+        "mean": 0.02948613934892835,
+        "p50": 0.027780908029984848
+      },
+      "diff_mean": 0.6217169741772853,
+      "vuln_mean": 0.0779649686755663,
+      "loss_exceedance_curve": [
+        {
+          "percentile": 0.0,
+          "loss": 16007.413911240492,
+          "exceedance_probability": 1.0
+        },
+        {
+          "percentile": 1.0,
+          "loss": 43372.570296920385,
+          "exceedance_probability": 0.99
+        },
+        {
+          "percentile": 2.0,
+          "loss": 54758.40880777722,
+          "exceedance_probability": 0.98
+        },
+        {
+          "percentile": 3.0,
+          "loss": 62196.250217497174,
+          "exceedance_probability": 0.97
+        },
+        {
+          "percentile": 4.0,
+          "loss": 68714.93409837982,
+          "exceedance_probability": 0.96
+        },
+        {
+          "percentile": 5.0,
+          "loss": 74052.51737327661,
+          "exceedance_probability": 0.95
+        },
+        {
+          "percentile": 6.0,
+          "loss": 78929.16837877674,
+          "exceedance_probability": 0.94
+        },
+        {
+          "percentile": 7.0,
+          "loss": 83921.34830879813,
+          "exceedance_probability": 0.93
+        },
+        {
+          "percentile": 8.0,
+          "loss": 89308.85351571157,
+          "exceedance_probability": 0.92
+        },
+        {
+          "percentile": 9.0,
+          "loss": 93965.24519025782,
+          "exceedance_probability": 0.91
+        },
+        {
+          "percentile": 10.0,
+          "loss": 98341.8309940218,
+          "exceedance_probability": 0.9
+        },
+        {
+          "percentile": 11.0,
+          "loss": 102208.80011279412,
+          "exceedance_probability": 0.89
+        },
+        {
+          "percentile": 12.0,
+          "loss": 106673.28254910761,
+          "exceedance_probability": 0.88
+        },
+        {
+          "percentile": 13.0,
+          "loss": 110098.61262055444,
+          "exceedance_probability": 0.87
+        },
+        {
+          "percentile": 14.0,
+          "loss": 115038.18447289823,
+          "exceedance_probability": 0.86
+        },
+        {
+          "percentile": 15.0,
+          "loss": 119117.0269472004,
+          "exceedance_probability": 0.85
+        },
+        {
+          "percentile": 16.0,
+          "loss": 122468.09425932734,
+          "exceedance_probability": 0.84
+        },
+        {
+          "percentile": 17.0,
+          "loss": 126263.39843085436,
+          "exceedance_probability": 0.83
+        },
+        {
+          "percentile": 18.0,
+          "loss": 130066.62973044705,
+          "exceedance_probability": 0.82
+        },
+        {
+          "percentile": 19.0,
+          "loss": 133745.45366450326,
+          "exceedance_probability": 0.81
+        },
+        {
+          "percentile": 20.0,
+          "loss": 138051.87104521276,
+          "exceedance_probability": 0.8
+        },
+        {
+          "percentile": 21.0,
+          "loss": 142774.37289397707,
+          "exceedance_probability": 0.79
+        },
+        {
+          "percentile": 22.0,
+          "loss": 146609.64353464838,
+          "exceedance_probability": 0.78
+        },
+        {
+          "percentile": 23.0,
+          "loss": 149903.6318510858,
+          "exceedance_probability": 0.77
+        },
+        {
+          "percentile": 24.0,
+          "loss": 153717.02715643295,
+          "exceedance_probability": 0.76
+        },
+        {
+          "percentile": 25.0,
+          "loss": 157630.3000334098,
+          "exceedance_probability": 0.75
+        },
+        {
+          "percentile": 26.0,
+          "loss": 161556.311033403,
+          "exceedance_probability": 0.74
+        },
+        {
+          "percentile": 27.0,
+          "loss": 165239.1276226211,
+          "exceedance_probability": 0.73
+        },
+        {
+          "percentile": 28.0,
+          "loss": 169529.54865770135,
+          "exceedance_probability": 0.72
+        },
+        {
+          "percentile": 29.0,
+          "loss": 173281.34782312156,
+          "exceedance_probability": 0.71
+        },
+        {
+          "percentile": 30.0,
+          "loss": 177363.4755181408,
+          "exceedance_probability": 0.7
+        },
+        {
+          "percentile": 31.0,
+          "loss": 181469.81460395813,
+          "exceedance_probability": 0.69
+        },
+        {
+          "percentile": 32.0,
+          "loss": 184947.8841389353,
+          "exceedance_probability": 0.68
+        },
+        {
+          "percentile": 33.0,
+          "loss": 188947.63933140563,
+          "exceedance_probability": 0.67
+        },
+        {
+          "percentile": 34.0,
+          "loss": 193154.74635725332,
+          "exceedance_probability": 0.66
+        },
+        {
+          "percentile": 35.0,
+          "loss": 197178.17107249628,
+          "exceedance_probability": 0.65
+        },
+        {
+          "percentile": 36.0,
+          "loss": 201604.60237013735,
+          "exceedance_probability": 0.64
+        },
+        {
+          "percentile": 37.0,
+          "loss": 204849.76269947953,
+          "exceedance_probability": 0.63
+        },
+        {
+          "percentile": 38.0,
+          "loss": 208757.011017038,
+          "exceedance_probability": 0.62
+        },
+        {
+          "percentile": 39.0,
+          "loss": 213029.6147787644,
+          "exceedance_probability": 0.61
+        },
+        {
+          "percentile": 40.0,
+          "loss": 217683.82800694153,
+          "exceedance_probability": 0.6
+        },
+        {
+          "percentile": 41.0,
+          "loss": 221635.14039365147,
+          "exceedance_probability": 0.59
+        },
+        {
+          "percentile": 42.0,
+          "loss": 225951.62958467894,
+          "exceedance_probability": 0.58
+        },
+        {
+          "percentile": 43.0,
+          "loss": 230154.77267650104,
+          "exceedance_probability": 0.57
+        },
+        {
+          "percentile": 44.0,
+          "loss": 234769.7479433231,
+          "exceedance_probability": 0.56
+        },
+        {
+          "percentile": 45.0,
+          "loss": 239060.2566948694,
+          "exceedance_probability": 0.55
+        },
+        {
+          "percentile": 46.0,
+          "loss": 243761.27455529227,
+          "exceedance_probability": 0.54
+        },
+        {
+          "percentile": 47.0,
+          "loss": 248733.0384958404,
+          "exceedance_probability": 0.53
+        },
+        {
+          "percentile": 48.0,
+          "loss": 253727.31807107714,
+          "exceedance_probability": 0.52
+        },
+        {
+          "percentile": 49.0,
+          "loss": 259427.47958119118,
+          "exceedance_probability": 0.51
+        },
+        {
+          "percentile": 50.0,
+          "loss": 264737.00652309397,
+          "exceedance_probability": 0.5
+        },
+        {
+          "percentile": 51.0,
+          "loss": 269631.9558081609,
+          "exceedance_probability": 0.49
+        },
+        {
+          "percentile": 52.0,
+          "loss": 274048.2417197843,
+          "exceedance_probability": 0.48
+        },
+        {
+          "percentile": 53.0,
+          "loss": 280120.0112500658,
+          "exceedance_probability": 0.47
+        },
+        {
+          "percentile": 54.0,
+          "loss": 286104.83735595434,
+          "exceedance_probability": 0.46
+        },
+        {
+          "percentile": 55.0,
+          "loss": 291700.4547097903,
+          "exceedance_probability": 0.45
+        },
+        {
+          "percentile": 56.0,
+          "loss": 296547.27215300966,
+          "exceedance_probability": 0.44
+        },
+        {
+          "percentile": 57.0,
+          "loss": 301667.8004445066,
+          "exceedance_probability": 0.43
+        },
+        {
+          "percentile": 58.0,
+          "loss": 306457.3037418792,
+          "exceedance_probability": 0.42
+        },
+        {
+          "percentile": 59.0,
+          "loss": 312261.9490458299,
+          "exceedance_probability": 0.41
+        },
+        {
+          "percentile": 60.0,
+          "loss": 317895.9776535725,
+          "exceedance_probability": 0.4
+        },
+        {
+          "percentile": 61.0,
+          "loss": 323893.3694394296,
+          "exceedance_probability": 0.39
+        },
+        {
+          "percentile": 62.0,
+          "loss": 329142.85101941647,
+          "exceedance_probability": 0.38
+        },
+        {
+          "percentile": 63.0,
+          "loss": 336257.39332842367,
+          "exceedance_probability": 0.37
+        },
+        {
+          "percentile": 64.0,
+          "loss": 342527.47537435056,
+          "exceedance_probability": 0.36
+        },
+        {
+          "percentile": 65.0,
+          "loss": 347872.2908948772,
+          "exceedance_probability": 0.35
+        },
+        {
+          "percentile": 66.0,
+          "loss": 354985.1790166819,
+          "exceedance_probability": 0.34
+        },
+        {
+          "percentile": 67.0,
+          "loss": 362342.63303954044,
+          "exceedance_probability": 0.33
+        },
+        {
+          "percentile": 68.0,
+          "loss": 369541.1805931213,
+          "exceedance_probability": 0.32
+        },
+        {
+          "percentile": 69.0,
+          "loss": 377467.59016789956,
+          "exceedance_probability": 0.31
+        },
+        {
+          "percentile": 70.0,
+          "loss": 384077.3486605027,
+          "exceedance_probability": 0.3
+        },
+        {
+          "percentile": 71.0,
+          "loss": 392520.4070935306,
+          "exceedance_probability": 0.29
+        },
+        {
+          "percentile": 72.0,
+          "loss": 400065.0509063011,
+          "exceedance_probability": 0.28
+        },
+        {
+          "percentile": 73.0,
+          "loss": 408412.33383392583,
+          "exceedance_probability": 0.27
+        },
+        {
+          "percentile": 74.0,
+          "loss": 416572.5547492919,
+          "exceedance_probability": 0.26
+        },
+        {
+          "percentile": 75.0,
+          "loss": 426189.3328570379,
+          "exceedance_probability": 0.25
+        },
+        {
+          "percentile": 76.0,
+          "loss": 435976.1180031544,
+          "exceedance_probability": 0.24
+        },
+        {
+          "percentile": 77.0,
+          "loss": 446806.67982289416,
+          "exceedance_probability": 0.23
+        },
+        {
+          "percentile": 78.0,
+          "loss": 456829.07589206466,
+          "exceedance_probability": 0.22
+        },
+        {
+          "percentile": 79.0,
+          "loss": 465781.1243896605,
+          "exceedance_probability": 0.21
+        },
+        {
+          "percentile": 80.0,
+          "loss": 477377.72910698096,
+          "exceedance_probability": 0.2
+        },
+        {
+          "percentile": 81.0,
+          "loss": 488999.3274115682,
+          "exceedance_probability": 0.19
+        },
+        {
+          "percentile": 82.0,
+          "loss": 501409.1366171041,
+          "exceedance_probability": 0.18
+        },
+        {
+          "percentile": 83.0,
+          "loss": 513562.2511750763,
+          "exceedance_probability": 0.17
+        },
+        {
+          "percentile": 84.0,
+          "loss": 527143.8961854591,
+          "exceedance_probability": 0.16
+        },
+        {
+          "percentile": 85.0,
+          "loss": 541880.5528068313,
+          "exceedance_probability": 0.15
+        },
+        {
+          "percentile": 86.0,
+          "loss": 557214.2903517042,
+          "exceedance_probability": 0.14
+        },
+        {
+          "percentile": 87.0,
+          "loss": 575806.2172483711,
+          "exceedance_probability": 0.13
+        },
+        {
+          "percentile": 88.0,
+          "loss": 595589.1306615951,
+          "exceedance_probability": 0.12
+        },
+        {
+          "percentile": 89.0,
+          "loss": 617476.2211340889,
+          "exceedance_probability": 0.11
+        },
+        {
+          "percentile": 90.0,
+          "loss": 641249.8496664794,
+          "exceedance_probability": 0.1
+        },
+        {
+          "percentile": 91.0,
+          "loss": 667890.6351665027,
+          "exceedance_probability": 0.09
+        },
+        {
+          "percentile": 92.0,
+          "loss": 694125.3825372093,
+          "exceedance_probability": 0.08
+        },
+        {
+          "percentile": 93.0,
+          "loss": 728454.3373957693,
+          "exceedance_probability": 0.07
+        },
+        {
+          "percentile": 94.0,
+          "loss": 763919.0397602732,
+          "exceedance_probability": 0.06
+        },
+        {
+          "percentile": 95.0,
+          "loss": 808476.2646947408,
+          "exceedance_probability": 0.05
+        },
+        {
+          "percentile": 96.0,
+          "loss": 858629.8218217472,
+          "exceedance_probability": 0.04
+        },
+        {
+          "percentile": 97.0,
+          "loss": 930228.110034972,
+          "exceedance_probability": 0.03
+        },
+        {
+          "percentile": 98.0,
+          "loss": 1029138.1075475926,
+          "exceedance_probability": 0.02
+        },
+        {
+          "percentile": 99.0,
+          "loss": 1205382.4099212,
+          "exceedance_probability": 0.01
+        },
+        {
+          "percentile": 100.0,
+          "loss": 3008348.575601288,
+          "exceedance_probability": 0.0
+        }
+      ],
+      "contribution_pct": 5.8,
+      "control_benefit": {
+        "name": "Email Security Gateway + Security Awareness Training",
+        "description": "Deploy advanced email security with impersonation detection, DMARC/DKIM enforcement, and a quarterly security awareness training program with BEC-specific simulations.",
+        "annual_cost": 80000.0,
+        "ale_reduction_pct": 65.0,
+        "residual_ale_mean": 114968.1089842418,
+        "residual_var_90": 224437.44738326778,
+        "ale_reduction": 213512.20239930623,
+        "net_annual_benefit": 133512.20239930623,
+        "roi_pct": 166.9,
+        "payback_months": 4.5
+      }
+    },
+    {
+      "scenario_id": "insider-threat",
+      "scenario_name": "Insider Threat \u2014 Data Exfiltration by Privileged User",
+      "scenario_type": "insider-threat",
+      "asset": "Financial Records, Customer Data, Trading Systems",
+      "threat_actor": "Malicious Employee / Privileged Contractor",
+      "description": "Malicious employee or contractor with privileged database or system access exfiltrates sensitive financial records, customer PII, or trading data for personal gain or competitive espionage.",
+      "asset_value": 30000000.0,
+      "ale": {
+        "mean": 616792.2464778905,
+        "std": 419281.18490328104,
+        "p10": 193728.81274154465,
+        "p25": 309928.4949384015,
+        "p50": 509097.783059442,
+        "p75": 819042.8131763986,
+        "p90": 1183004.2025150813,
+        "p95": 1439372.256265586,
+        "p99": 2026898.224202297
+      },
+      "var_90": 1183004.2025150813,
+      "annualized_loss_range": {
+        "min": 193728.81274154465,
+        "likely": 509097.783059442,
+        "max": 1183004.2025150813
+      },
+      "lef": {
+        "mean": 0.16277086952240827,
+        "p50": 0.1534144715147599,
+        "p90": 0.2593000529084253
+      },
+      "loss_magnitude": {
+        "mean": 3798463.826636209,
+        "p50": 3558606.013324301
+      },
+      "effective_vuln": {
+        "mean": 0.3900442117456988,
+        "p50": 0.38716916919388444
+      },
+      "diff_mean": 0.22647256768426433,
+      "vuln_mean": 0.5042667102977947,
+      "loss_exceedance_curve": [
+        {
+          "percentile": 0.0,
+          "loss": 34324.91243405396,
+          "exceedance_probability": 1.0
+        },
+        {
+          "percentile": 1.0,
+          "loss": 82448.65172588635,
+          "exceedance_probability": 0.99
+        },
+        {
+          "percentile": 2.0,
+          "loss": 102127.49243591765,
+          "exceedance_probability": 0.98
+        },
+        {
+          "percentile": 3.0,
+          "loss": 119775.95067217707,
+          "exceedance_probability": 0.97
+        },
+        {
+          "percentile": 4.0,
+          "loss": 132230.71991698304,
+          "exceedance_probability": 0.96
+        },
+        {
+          "percentile": 5.0,
+          "loss": 146188.20324725684,
+          "exceedance_probability": 0.95
+        },
+        {
+          "percentile": 6.0,
+          "loss": 158305.91838963362,
+          "exceedance_probability": 0.94
+        },
+        {
+          "percentile": 7.0,
+          "loss": 167165.29220493,
+          "exceedance_probability": 0.93
+        },
+        {
+          "percentile": 8.0,
+          "loss": 176585.65989885098,
+          "exceedance_probability": 0.92
+        },
+        {
+          "percentile": 9.0,
+          "loss": 185282.95055200215,
+          "exceedance_probability": 0.91
+        },
+        {
+          "percentile": 10.0,
+          "loss": 193728.81274154465,
+          "exceedance_probability": 0.9
+        },
+        {
+          "percentile": 11.0,
+          "loss": 203279.76383473337,
+          "exceedance_probability": 0.89
+        },
+        {
+          "percentile": 12.0,
+          "loss": 211732.00406662715,
+          "exceedance_probability": 0.88
+        },
+        {
+          "percentile": 13.0,
+          "loss": 219907.5283088355,
+          "exceedance_probability": 0.87
+        },
+        {
+          "percentile": 14.0,
+          "loss": 228963.07630573734,
+          "exceedance_probability": 0.86
+        },
+        {
+          "percentile": 15.0,
+          "loss": 235557.12483723962,
+          "exceedance_probability": 0.85
+        },
+        {
+          "percentile": 16.0,
+          "loss": 243099.04300525176,
+          "exceedance_probability": 0.84
+        },
+        {
+          "percentile": 17.0,
+          "loss": 250267.47287981736,
+          "exceedance_probability": 0.83
+        },
+        {
+          "percentile": 18.0,
+          "loss": 258074.48967656458,
+          "exceedance_probability": 0.82
+        },
+        {
+          "percentile": 19.0,
+          "loss": 265441.1765764335,
+          "exceedance_probability": 0.81
+        },
+        {
+          "percentile": 20.0,
+          "loss": 271236.243543075,
+          "exceedance_probability": 0.8
+        },
+        {
+          "percentile": 21.0,
+          "loss": 278970.5485764979,
+          "exceedance_probability": 0.79
+        },
+        {
+          "percentile": 22.0,
+          "loss": 286229.35493052594,
+          "exceedance_probability": 0.78
+        },
+        {
+          "percentile": 23.0,
+          "loss": 293940.42188464553,
+          "exceedance_probability": 0.77
+        },
+        {
+          "percentile": 24.0,
+          "loss": 302136.6133981882,
+          "exceedance_probability": 0.76
+        },
+        {
+          "percentile": 25.0,
+          "loss": 309928.4949384015,
+          "exceedance_probability": 0.75
+        },
+        {
+          "percentile": 26.0,
+          "loss": 317837.6819183309,
+          "exceedance_probability": 0.74
+        },
+        {
+          "percentile": 27.0,
+          "loss": 324167.95896973833,
+          "exceedance_probability": 0.73
+        },
+        {
+          "percentile": 28.0,
+          "loss": 330897.8382225812,
+          "exceedance_probability": 0.72
+        },
+        {
+          "percentile": 29.0,
+          "loss": 338338.16394186165,
+          "exceedance_probability": 0.71
+        },
+        {
+          "percentile": 30.0,
+          "loss": 345776.87289584096,
+          "exceedance_probability": 0.7
+        },
+        {
+          "percentile": 31.0,
+          "loss": 352999.10160966846,
+          "exceedance_probability": 0.69
+        },
+        {
+          "percentile": 32.0,
+          "loss": 360888.1301444529,
+          "exceedance_probability": 0.68
+        },
+        {
+          "percentile": 33.0,
+          "loss": 369115.88317315286,
+          "exceedance_probability": 0.67
+        },
+        {
+          "percentile": 34.0,
+          "loss": 376505.347599562,
+          "exceedance_probability": 0.66
+        },
+        {
+          "percentile": 35.0,
+          "loss": 384828.12312477455,
+          "exceedance_probability": 0.65
+        },
+        {
+          "percentile": 36.0,
+          "loss": 392777.8781870317,
+          "exceedance_probability": 0.64
+        },
+        {
+          "percentile": 37.0,
+          "loss": 402178.14808404323,
+          "exceedance_probability": 0.63
+        },
+        {
+          "percentile": 38.0,
+          "loss": 411309.08510977996,
+          "exceedance_probability": 0.62
+        },
+        {
+          "percentile": 39.0,
+          "loss": 419523.96120029537,
+          "exceedance_probability": 0.61
+        },
+        {
+          "percentile": 40.0,
+          "loss": 426017.0229971029,
+          "exceedance_probability": 0.6
+        },
+        {
+          "percentile": 41.0,
+          "loss": 432888.63099078956,
+          "exceedance_probability": 0.59
+        },
+        {
+          "percentile": 42.0,
+          "loss": 443493.9501976975,
+          "exceedance_probability": 0.58
+        },
+        {
+          "percentile": 43.0,
+          "loss": 451448.8378748763,
+          "exceedance_probability": 0.57
+        },
+        {
+          "percentile": 44.0,
+          "loss": 459155.95684565895,
+          "exceedance_probability": 0.56
+        },
+        {
+          "percentile": 45.0,
+          "loss": 467219.8855490985,
+          "exceedance_probability": 0.55
+        },
+        {
+          "percentile": 46.0,
+          "loss": 474051.73067350936,
+          "exceedance_probability": 0.54
+        },
+        {
+          "percentile": 47.0,
+          "loss": 481699.8530077736,
+          "exceedance_probability": 0.53
+        },
+        {
+          "percentile": 48.0,
+          "loss": 492196.07731867465,
+          "exceedance_probability": 0.52
+        },
+        {
+          "percentile": 49.0,
+          "loss": 499979.1511811155,
+          "exceedance_probability": 0.51
+        },
+        {
+          "percentile": 50.0,
+          "loss": 509097.783059442,
+          "exceedance_probability": 0.5
+        },
+        {
+          "percentile": 51.0,
+          "loss": 518274.11644242547,
+          "exceedance_probability": 0.49
+        },
+        {
+          "percentile": 52.0,
+          "loss": 528938.8150389165,
+          "exceedance_probability": 0.48
+        },
+        {
+          "percentile": 53.0,
+          "loss": 538472.5996270215,
+          "exceedance_probability": 0.47
+        },
+        {
+          "percentile": 54.0,
+          "loss": 548240.7144784521,
+          "exceedance_probability": 0.46
+        },
+        {
+          "percentile": 55.0,
+          "loss": 558646.4788770507,
+          "exceedance_probability": 0.45
+        },
+        {
+          "percentile": 56.0,
+          "loss": 567310.4596033255,
+          "exceedance_probability": 0.44
+        },
+        {
+          "percentile": 57.0,
+          "loss": 580534.9806289007,
+          "exceedance_probability": 0.43
+        },
+        {
+          "percentile": 58.0,
+          "loss": 592261.4997142756,
+          "exceedance_probability": 0.42
+        },
+        {
+          "percentile": 59.0,
+          "loss": 603064.6423785009,
+          "exceedance_probability": 0.41
+        },
+        {
+          "percentile": 60.0,
+          "loss": 615107.7574512593,
+          "exceedance_probability": 0.4
+        },
+        {
+          "percentile": 61.0,
+          "loss": 627609.0351077451,
+          "exceedance_probability": 0.39
+        },
+        {
+          "percentile": 62.0,
+          "loss": 639680.3319784271,
+          "exceedance_probability": 0.38
+        },
+        {
+          "percentile": 63.0,
+          "loss": 649639.2162907693,
+          "exceedance_probability": 0.37
+        },
+        {
+          "percentile": 64.0,
+          "loss": 662482.0424086964,
+          "exceedance_probability": 0.36
+        },
+        {
+          "percentile": 65.0,
+          "loss": 673389.2271889665,
+          "exceedance_probability": 0.35
+        },
+        {
+          "percentile": 66.0,
+          "loss": 684991.3314213204,
+          "exceedance_probability": 0.34
+        },
+        {
+          "percentile": 67.0,
+          "loss": 695785.4420484325,
+          "exceedance_probability": 0.33
+        },
+        {
+          "percentile": 68.0,
+          "loss": 711218.1732491156,
+          "exceedance_probability": 0.32
+        },
+        {
+          "percentile": 69.0,
+          "loss": 727248.9408409239,
+          "exceedance_probability": 0.31
+        },
+        {
+          "percentile": 70.0,
+          "loss": 741915.8024285784,
+          "exceedance_probability": 0.3
+        },
+        {
+          "percentile": 71.0,
+          "loss": 753849.7668337696,
+          "exceedance_probability": 0.29
+        },
+        {
+          "percentile": 72.0,
+          "loss": 767003.2071617936,
+          "exceedance_probability": 0.28
+        },
+        {
+          "percentile": 73.0,
+          "loss": 784739.4399991354,
+          "exceedance_probability": 0.27
+        },
+        {
+          "percentile": 74.0,
+          "loss": 801836.9904504326,
+          "exceedance_probability": 0.26
+        },
+        {
+          "percentile": 75.0,
+          "loss": 819042.8131763986,
+          "exceedance_probability": 0.25
+        },
+        {
+          "percentile": 76.0,
+          "loss": 835203.4195110106,
+          "exceedance_probability": 0.24
+        },
+        {
+          "percentile": 77.0,
+          "loss": 853096.4132956081,
+          "exceedance_probability": 0.23
+        },
+        {
+          "percentile": 78.0,
+          "loss": 875521.8257172167,
+          "exceedance_probability": 0.22
+        },
+        {
+          "percentile": 79.0,
+          "loss": 893919.1560373644,
+          "exceedance_probability": 0.21
+        },
+        {
+          "percentile": 80.0,
+          "loss": 910549.9025331408,
+          "exceedance_probability": 0.2
+        },
+        {
+          "percentile": 81.0,
+          "loss": 931367.7455438352,
+          "exceedance_probability": 0.19
+        },
+        {
+          "percentile": 82.0,
+          "loss": 951331.2315957568,
+          "exceedance_probability": 0.18
+        },
+        {
+          "percentile": 83.0,
+          "loss": 976072.2345976729,
+          "exceedance_probability": 0.17
+        },
+        {
+          "percentile": 84.0,
+          "loss": 1001756.5551158397,
+          "exceedance_probability": 0.16
+        },
+        {
+          "percentile": 85.0,
+          "loss": 1024097.5472181742,
+          "exceedance_probability": 0.15
+        },
+        {
+          "percentile": 86.0,
+          "loss": 1054862.939092596,
+          "exceedance_probability": 0.14
+        },
+        {
+          "percentile": 87.0,
+          "loss": 1085133.242881533,
+          "exceedance_probability": 0.13
+        },
+        {
+          "percentile": 88.0,
+          "loss": 1112595.088805915,
+          "exceedance_probability": 0.12
+        },
+        {
+          "percentile": 89.0,
+          "loss": 1145188.3996770307,
+          "exceedance_probability": 0.11
+        },
+        {
+          "percentile": 90.0,
+          "loss": 1183004.2025150813,
+          "exceedance_probability": 0.1
+        },
+        {
+          "percentile": 91.0,
+          "loss": 1224767.373629825,
+          "exceedance_probability": 0.09
+        },
+        {
+          "percentile": 92.0,
+          "loss": 1276977.760425726,
+          "exceedance_probability": 0.08
+        },
+        {
+          "percentile": 93.0,
+          "loss": 1326179.7965069674,
+          "exceedance_probability": 0.07
+        },
+        {
+          "percentile": 94.0,
+          "loss": 1380836.5515720358,
+          "exceedance_probability": 0.06
+        },
+        {
+          "percentile": 95.0,
+          "loss": 1439372.256265586,
+          "exceedance_probability": 0.05
+        },
+        {
+          "percentile": 96.0,
+          "loss": 1519148.4139705552,
+          "exceedance_probability": 0.04
+        },
+        {
+          "percentile": 97.0,
+          "loss": 1600626.7049687952,
+          "exceedance_probability": 0.03
+        },
+        {
+          "percentile": 98.0,
+          "loss": 1741431.8636108972,
+          "exceedance_probability": 0.02
+        },
+        {
+          "percentile": 99.0,
+          "loss": 2026898.224202297,
+          "exceedance_probability": 0.01
+        },
+        {
+          "percentile": 100.0,
+          "loss": 3661257.021454047,
+          "exceedance_probability": 0.0
+        }
+      ],
+      "contribution_pct": 10.8,
+      "control_benefit": {
+        "name": "UEBA + Zero-Trust Privileged Access",
+        "description": "Deploy User & Entity Behaviour Analytics with anomaly alerts on sensitive data access patterns, combined with just-in-time privileged access controls and session recording.",
+        "annual_cost": 155000.0,
+        "ale_reduction_pct": 45.0,
+        "residual_ale_mean": 339235.73556283984,
+        "residual_var_90": 650652.3113832948,
+        "ale_reduction": 277556.5109150507,
+        "net_annual_benefit": 122556.51091505069,
+        "roi_pct": 79.1,
+        "payback_months": 6.7
+      }
+    },
+    {
+      "scenario_id": "third-party",
+      "scenario_name": "Third-Party / Supply Chain Attack \u2014 Fintech Vendor",
+      "scenario_type": "third-party",
+      "asset": "Core Systems via Third-Party Integration",
+      "threat_actor": "Nation-State Actor / Sophisticated Criminal Group",
+      "description": "Compromise through a trusted fintech partner, core banking software provider, or managed IT/security vendor gives the attacker persistent access to internal systems with minimal detection.",
+      "asset_value": 45000000.0,
+      "ale": {
+        "mean": 1542051.555847274,
+        "std": 1015218.8109086073,
+        "p10": 505290.66069047555,
+        "p25": 795958.061749783,
+        "p50": 1294821.3200633796,
+        "p75": 2028997.9144671182,
+        "p90": 2884524.8740215027,
+        "p95": 3545339.3277622643,
+        "p99": 4952726.62720529
+      },
+      "var_90": 2884524.8740215027,
+      "annualized_loss_range": {
+        "min": 505290.66069047555,
+        "likely": 1294821.3200633796,
+        "max": 2884524.8740215027
+      },
+      "lef": {
+        "mean": 0.1028436382218927,
+        "p50": 0.09547127827034395,
+        "p90": 0.16559204075833853
+      },
+      "loss_magnitude": {
+        "mean": 14981875.620846154,
+        "p50": 14118850.036889251
+      },
+      "effective_vuln": {
+        "mean": 0.30402379850173794,
+        "p50": 0.29981547039785283
+      },
+      "diff_mean": 0.33060668061354515,
+      "vuln_mean": 0.45408500058206436,
+      "loss_exceedance_curve": [
+        {
+          "percentile": 0.0,
+          "loss": 86912.61292665571,
+          "exceedance_probability": 1.0
+        },
+        {
+          "percentile": 1.0,
+          "loss": 242011.01233770757,
+          "exceedance_probability": 0.99
+        },
+        {
+          "percentile": 2.0,
+          "loss": 296053.7140376474,
+          "exceedance_probability": 0.98
+        },
+        {
+          "percentile": 3.0,
+          "loss": 331192.4343508712,
+          "exceedance_probability": 0.97
+        },
+        {
+          "percentile": 4.0,
+          "loss": 363228.2842114475,
+          "exceedance_probability": 0.96
+        },
+        {
+          "percentile": 5.0,
+          "loss": 389078.81588552764,
+          "exceedance_probability": 0.95
+        },
+        {
+          "percentile": 6.0,
+          "loss": 412062.04434329533,
+          "exceedance_probability": 0.94
+        },
+        {
+          "percentile": 7.0,
+          "loss": 436687.9356857501,
+          "exceedance_probability": 0.93
+        },
+        {
+          "percentile": 8.0,
+          "loss": 462068.299185303,
+          "exceedance_probability": 0.92
+        },
+        {
+          "percentile": 9.0,
+          "loss": 483960.5257263355,
+          "exceedance_probability": 0.91
+        },
+        {
+          "percentile": 10.0,
+          "loss": 505290.66069047555,
+          "exceedance_probability": 0.9
+        },
+        {
+          "percentile": 11.0,
+          "loss": 529852.1669218441,
+          "exceedance_probability": 0.89
+        },
+        {
+          "percentile": 12.0,
+          "loss": 550234.7635963479,
+          "exceedance_probability": 0.88
+        },
+        {
+          "percentile": 13.0,
+          "loss": 570168.6161615914,
+          "exceedance_probability": 0.87
+        },
+        {
+          "percentile": 14.0,
+          "loss": 591002.9196371948,
+          "exceedance_probability": 0.86
+        },
+        {
+          "percentile": 15.0,
+          "loss": 610917.1586358806,
+          "exceedance_probability": 0.85
+        },
+        {
+          "percentile": 16.0,
+          "loss": 628051.6654391303,
+          "exceedance_probability": 0.84
+        },
+        {
+          "percentile": 17.0,
+          "loss": 645156.9244167794,
+          "exceedance_probability": 0.83
+        },
+        {
+          "percentile": 18.0,
+          "loss": 664833.3502868819,
+          "exceedance_probability": 0.82
+        },
+        {
+          "percentile": 19.0,
+          "loss": 685424.1680091011,
+          "exceedance_probability": 0.81
+        },
+        {
+          "percentile": 20.0,
+          "loss": 703688.8633292875,
+          "exceedance_probability": 0.8
+        },
+        {
+          "percentile": 21.0,
+          "loss": 722586.7066338562,
+          "exceedance_probability": 0.79
+        },
+        {
+          "percentile": 22.0,
+          "loss": 740323.9045004359,
+          "exceedance_probability": 0.78
+        },
+        {
+          "percentile": 23.0,
+          "loss": 759253.3157838373,
+          "exceedance_probability": 0.77
+        },
+        {
+          "percentile": 24.0,
+          "loss": 778245.9215165678,
+          "exceedance_probability": 0.76
+        },
+        {
+          "percentile": 25.0,
+          "loss": 795958.061749783,
+          "exceedance_probability": 0.75
+        },
+        {
+          "percentile": 26.0,
+          "loss": 813083.6045362031,
+          "exceedance_probability": 0.74
+        },
+        {
+          "percentile": 27.0,
+          "loss": 828588.8863994379,
+          "exceedance_probability": 0.73
+        },
+        {
+          "percentile": 28.0,
+          "loss": 850332.2076623879,
+          "exceedance_probability": 0.72
+        },
+        {
+          "percentile": 29.0,
+          "loss": 868087.7673791248,
+          "exceedance_probability": 0.71
+        },
+        {
+          "percentile": 30.0,
+          "loss": 888788.9549254981,
+          "exceedance_probability": 0.7
+        },
+        {
+          "percentile": 31.0,
+          "loss": 909430.7256735037,
+          "exceedance_probability": 0.69
+        },
+        {
+          "percentile": 32.0,
+          "loss": 927447.7761114421,
+          "exceedance_probability": 0.68
+        },
+        {
+          "percentile": 33.0,
+          "loss": 944705.6765921722,
+          "exceedance_probability": 0.67
+        },
+        {
+          "percentile": 34.0,
+          "loss": 963445.8930055549,
+          "exceedance_probability": 0.66
+        },
+        {
+          "percentile": 35.0,
+          "loss": 978957.4995944828,
+          "exceedance_probability": 0.65
+        },
+        {
+          "percentile": 36.0,
+          "loss": 997374.7310122947,
+          "exceedance_probability": 0.64
+        },
+        {
+          "percentile": 37.0,
+          "loss": 1017746.3795097179,
+          "exceedance_probability": 0.63
+        },
+        {
+          "percentile": 38.0,
+          "loss": 1037829.244412136,
+          "exceedance_probability": 0.62
+        },
+        {
+          "percentile": 39.0,
+          "loss": 1058644.2339879072,
+          "exceedance_probability": 0.61
+        },
+        {
+          "percentile": 40.0,
+          "loss": 1079209.8864938137,
+          "exceedance_probability": 0.6
+        },
+        {
+          "percentile": 41.0,
+          "loss": 1097839.7099772212,
+          "exceedance_probability": 0.59
+        },
+        {
+          "percentile": 42.0,
+          "loss": 1116609.9162085427,
+          "exceedance_probability": 0.58
+        },
+        {
+          "percentile": 43.0,
+          "loss": 1139412.192337071,
+          "exceedance_probability": 0.57
+        },
+        {
+          "percentile": 44.0,
+          "loss": 1161745.6112131784,
+          "exceedance_probability": 0.56
+        },
+        {
+          "percentile": 45.0,
+          "loss": 1183762.3458974226,
+          "exceedance_probability": 0.55
+        },
+        {
+          "percentile": 46.0,
+          "loss": 1205308.7700090604,
+          "exceedance_probability": 0.54
+        },
+        {
+          "percentile": 47.0,
+          "loss": 1226343.2272643377,
+          "exceedance_probability": 0.53
+        },
+        {
+          "percentile": 48.0,
+          "loss": 1248973.4721392307,
+          "exceedance_probability": 0.52
+        },
+        {
+          "percentile": 49.0,
+          "loss": 1271442.427483529,
+          "exceedance_probability": 0.51
+        },
+        {
+          "percentile": 50.0,
+          "loss": 1294821.3200633796,
+          "exceedance_probability": 0.5
+        },
+        {
+          "percentile": 51.0,
+          "loss": 1317623.476799015,
+          "exceedance_probability": 0.49
+        },
+        {
+          "percentile": 52.0,
+          "loss": 1338559.3486339177,
+          "exceedance_probability": 0.48
+        },
+        {
+          "percentile": 53.0,
+          "loss": 1362532.8698524705,
+          "exceedance_probability": 0.47
+        },
+        {
+          "percentile": 54.0,
+          "loss": 1386452.8701439516,
+          "exceedance_probability": 0.46
+        },
+        {
+          "percentile": 55.0,
+          "loss": 1411834.1521799767,
+          "exceedance_probability": 0.45
+        },
+        {
+          "percentile": 56.0,
+          "loss": 1439104.107289938,
+          "exceedance_probability": 0.44
+        },
+        {
+          "percentile": 57.0,
+          "loss": 1464495.8424176248,
+          "exceedance_probability": 0.43
+        },
+        {
+          "percentile": 58.0,
+          "loss": 1492226.9576034432,
+          "exceedance_probability": 0.42
+        },
+        {
+          "percentile": 59.0,
+          "loss": 1518831.509959261,
+          "exceedance_probability": 0.41
+        },
+        {
+          "percentile": 60.0,
+          "loss": 1547017.3142709578,
+          "exceedance_probability": 0.4
+        },
+        {
+          "percentile": 61.0,
+          "loss": 1575447.5730253854,
+          "exceedance_probability": 0.39
+        },
+        {
+          "percentile": 62.0,
+          "loss": 1601477.2069407913,
+          "exceedance_probability": 0.38
+        },
+        {
+          "percentile": 63.0,
+          "loss": 1629425.4951065897,
+          "exceedance_probability": 0.37
+        },
+        {
+          "percentile": 64.0,
+          "loss": 1658166.3870667375,
+          "exceedance_probability": 0.36
+        },
+        {
+          "percentile": 65.0,
+          "loss": 1684732.2716196054,
+          "exceedance_probability": 0.35
+        },
+        {
+          "percentile": 66.0,
+          "loss": 1715284.5797135902,
+          "exceedance_probability": 0.34
+        },
+        {
+          "percentile": 67.0,
+          "loss": 1746259.6607050272,
+          "exceedance_probability": 0.33
+        },
+        {
+          "percentile": 68.0,
+          "loss": 1781593.8557343201,
+          "exceedance_probability": 0.32
+        },
+        {
+          "percentile": 69.0,
+          "loss": 1811861.130159903,
+          "exceedance_probability": 0.31
+        },
+        {
+          "percentile": 70.0,
+          "loss": 1841740.3617858798,
+          "exceedance_probability": 0.3
+        },
+        {
+          "percentile": 71.0,
+          "loss": 1878150.5825861571,
+          "exceedance_probability": 0.29
+        },
+        {
+          "percentile": 72.0,
+          "loss": 1911120.1559616677,
+          "exceedance_probability": 0.28
+        },
+        {
+          "percentile": 73.0,
+          "loss": 1951731.9014946474,
+          "exceedance_probability": 0.27
+        },
+        {
+          "percentile": 74.0,
+          "loss": 1987250.8161553245,
+          "exceedance_probability": 0.26
+        },
+        {
+          "percentile": 75.0,
+          "loss": 2028997.9144671182,
+          "exceedance_probability": 0.25
+        },
+        {
+          "percentile": 76.0,
+          "loss": 2078779.9304306924,
+          "exceedance_probability": 0.24
+        },
+        {
+          "percentile": 77.0,
+          "loss": 2119603.770051363,
+          "exceedance_probability": 0.23
+        },
+        {
+          "percentile": 78.0,
+          "loss": 2167879.772553522,
+          "exceedance_probability": 0.22
+        },
+        {
+          "percentile": 79.0,
+          "loss": 2213099.7094506877,
+          "exceedance_probability": 0.21
+        },
+        {
+          "percentile": 80.0,
+          "loss": 2255584.919473863,
+          "exceedance_probability": 0.2
+        },
+        {
+          "percentile": 81.0,
+          "loss": 2310370.3765197415,
+          "exceedance_probability": 0.19
+        },
+        {
+          "percentile": 82.0,
+          "loss": 2363282.1924205804,
+          "exceedance_probability": 0.18
+        },
+        {
+          "percentile": 83.0,
+          "loss": 2418861.3931145053,
+          "exceedance_probability": 0.17
+        },
+        {
+          "percentile": 84.0,
+          "loss": 2472980.8190935496,
+          "exceedance_probability": 0.16
+        },
+        {
+          "percentile": 85.0,
+          "loss": 2527342.3373074243,
+          "exceedance_probability": 0.15
+        },
+        {
+          "percentile": 86.0,
+          "loss": 2590503.1062418143,
+          "exceedance_probability": 0.14
+        },
+        {
+          "percentile": 87.0,
+          "loss": 2659760.300619418,
+          "exceedance_probability": 0.13
+        },
+        {
+          "percentile": 88.0,
+          "loss": 2716478.003595756,
+          "exceedance_probability": 0.12
+        },
+        {
+          "percentile": 89.0,
+          "loss": 2800356.358241942,
+          "exceedance_probability": 0.11
+        },
+        {
+          "percentile": 90.0,
+          "loss": 2884524.8740215027,
+          "exceedance_probability": 0.1
+        },
+        {
+          "percentile": 91.0,
+          "loss": 2987654.9919049493,
+          "exceedance_probability": 0.09
+        },
+        {
+          "percentile": 92.0,
+          "loss": 3129509.2095040586,
+          "exceedance_probability": 0.08
+        },
+        {
+          "percentile": 93.0,
+          "loss": 3249052.4399127546,
+          "exceedance_probability": 0.07
+        },
+        {
+          "percentile": 94.0,
+          "loss": 3396506.442564831,
+          "exceedance_probability": 0.06
+        },
+        {
+          "percentile": 95.0,
+          "loss": 3545339.3277622643,
+          "exceedance_probability": 0.05
+        },
+        {
+          "percentile": 96.0,
+          "loss": 3748877.274385457,
+          "exceedance_probability": 0.04
+        },
+        {
+          "percentile": 97.0,
+          "loss": 3990197.8134130132,
+          "exceedance_probability": 0.03
+        },
+        {
+          "percentile": 98.0,
+          "loss": 4357641.367767057,
+          "exceedance_probability": 0.02
+        },
+        {
+          "percentile": 99.0,
+          "loss": 4952726.62720529,
+          "exceedance_probability": 0.01
+        },
+        {
+          "percentile": 100.0,
+          "loss": 7465626.942031106,
+          "exceedance_probability": 0.0
+        }
+      ],
+      "contribution_pct": 27.1,
+      "control_benefit": {
+        "name": "Vendor Risk Management Platform + Contractual Controls",
+        "description": "Implement continuous vendor security assessment platform with mandatory SOC 2 Type II attestation, network segmentation for third-party integrations, and real-time vendor threat intelligence feeds.",
+        "annual_cost": 125000.0,
+        "ale_reduction_pct": 40.0,
+        "residual_ale_mean": 925230.9335083644,
+        "residual_var_90": 1730714.9244129015,
+        "ale_reduction": 616820.6223389095,
+        "net_annual_benefit": 491820.62233890954,
+        "roi_pct": 393.5,
+        "payback_months": 2.4
+      }
+    }
+  ]
+}

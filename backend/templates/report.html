@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CRQ Risk Report — {{ risk.client_name }}</title>
+<style>
+  /* ── Page setup ──────────────────────────────────────────────────────── */
+  @page {
+    size: A4 portrait;
+    margin: 18mm 16mm 18mm 16mm;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 8pt;
+      color: #94a3b8;
+      font-family: sans-serif;
+    }
+  }
+
+  /* ── Base ────────────────────────────────────────────────────────────── */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #1e293b;
+    line-height: 1.5;
+    background: #ffffff;
+  }
+
+  h1 { font-size: 18pt; font-weight: 700; color: #0f172a; }
+  h2 { font-size: 12pt; font-weight: 700; color: #0f172a; margin-bottom: 8px; }
+  h3 { font-size: 10pt; font-weight: 600; color: #1e293b; margin-bottom: 6px; }
+
+  p  { color: #334155; }
+
+  /* ── Utilities ───────────────────────────────────────────────────────── */
+  .mono { font-family: "Courier New", "Consolas", monospace; }
+  .label { font-size: 7.5pt; font-weight: 600; text-transform: uppercase;
+           letter-spacing: 0.06em; color: #64748b; }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 12px;
+    font-size: 7.5pt; font-weight: 600; letter-spacing: 0.04em;
+  }
+  .badge-red    { background: #fee2e2; color: #b91c1c; }
+  .badge-orange { background: #ffedd5; color: #c2410c; }
+  .badge-amber  { background: #fef9c3; color: #a16207; }
+  .badge-blue   { background: #dbeafe; color: #1d4ed8; }
+  .badge-emerald{ background: #d1fae5; color: #065f46; }
+  .badge-slate  { background: #f1f5f9; color: #475569; }
+
+  .section { margin-top: 20px; }
+  .section-title {
+    font-size: 11pt; font-weight: 700; color: #0f172a;
+    border-bottom: 2px solid #2563eb; padding-bottom: 4px; margin-bottom: 12px;
+  }
+  .divider { border: none; border-top: 1px solid #e2e8f0; margin: 14px 0; }
+
+  /* ── Cover / Header ──────────────────────────────────────────────────── */
+  .cover-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+    color: #ffffff; padding: 28px 28px 22px; border-radius: 6px;
+    margin-bottom: 20px; position: relative; overflow: hidden;
+  }
+  .cover-header::before {
+    content: "CONFIDENTIAL";
+    position: absolute; top: 12px; right: 18px;
+    font-size: 7.5pt; font-weight: 700; letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.2);
+    padding: 2px 8px; border-radius: 3px;
+  }
+  .cover-header h1 { color: #ffffff; font-size: 16pt; }
+  .cover-header .subtitle { color: #93c5fd; font-size: 9.5pt; margin-top: 3px; }
+  .cover-meta { margin-top: 14px; display: flex; gap: 28px; }
+  .cover-meta-item .label { color: #93c5fd; }
+  .cover-meta-item .value { color: #f1f5f9; font-size: 9.5pt; font-weight: 600; margin-top: 1px; }
+
+  /* ── KPI Grid ────────────────────────────────────────────────────────── */
+  .kpi-grid {
+    display: flex; gap: 10px; margin-bottom: 16px;
+  }
+  .kpi-card {
+    flex: 1; background: #f8fafc; border: 1px solid #e2e8f0;
+    border-radius: 6px; padding: 10px 12px;
+  }
+  .kpi-card .kpi-value {
+    font-size: 16pt; font-weight: 700; font-family: "Courier New", monospace;
+    color: #0f172a; line-height: 1.1; margin-top: 4px;
+  }
+  .kpi-card .kpi-value.red   { color: #dc2626; }
+  .kpi-card .kpi-value.amber { color: #d97706; }
+  .kpi-card .kpi-value.blue  { color: #2563eb; }
+  .kpi-card .kpi-sub { font-size: 7.5pt; color: #64748b; margin-top: 2px; }
+
+  /* ── Tables ──────────────────────────────────────────────────────────── */
+  table {
+    width: 100%; border-collapse: collapse; font-size: 8.5pt;
+  }
+  thead th {
+    background: #f1f5f9; color: #475569; font-weight: 600;
+    font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.05em;
+    padding: 7px 10px; text-align: left; border-bottom: 1px solid #cbd5e1;
+  }
+  thead th.right { text-align: right; }
+  tbody tr { border-bottom: 1px solid #f1f5f9; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody td { padding: 7px 10px; color: #334155; vertical-align: top; }
+  tbody td.right { text-align: right; }
+  tfoot tr { border-top: 2px solid #cbd5e1; background: #f8fafc; }
+  tfoot td { padding: 7px 10px; font-weight: 700; color: #0f172a; }
+  tfoot td.right { text-align: right; }
+
+  .dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    margin-right: 5px; vertical-align: middle;
+  }
+
+  /* ── ROI colors ──────────────────────────────────────────────────────── */
+  .roi-excellent { color: #16a34a; font-weight: 700; }
+  .roi-good      { color: #2563eb; font-weight: 600; }
+  .roi-marginal  { color: #d97706; }
+  .roi-negative  { color: #dc2626; }
+
+  /* ── Charts ──────────────────────────────────────────────────────────── */
+  .chart-wrap { margin: 12px 0; text-align: center; }
+  .chart-wrap img { max-width: 100%; border-radius: 4px; border: 1px solid #e2e8f0; }
+  .chart-caption { font-size: 7.5pt; color: #94a3b8; margin-top: 5px; text-align: center; }
+
+  /* ── Key finding box ─────────────────────────────────────────────────── */
+  .finding-box {
+    background: #eff6ff; border-left: 4px solid #2563eb;
+    border-radius: 0 6px 6px 0; padding: 10px 14px; margin: 14px 0;
+  }
+  .finding-box .finding-label { font-size: 7.5pt; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em; color: #2563eb; margin-bottom: 4px; }
+  .finding-box p { color: #1e3a5f; font-size: 9pt; line-height: 1.55; }
+
+  /* ── Footer ──────────────────────────────────────────────────────────── */
+  .report-footer {
+    margin-top: 28px; padding-top: 10px; border-top: 1px solid #e2e8f0;
+    font-size: 7pt; color: #94a3b8; text-align: center; line-height: 1.6;
+  }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     COVER HEADER
+══════════════════════════════════════════════════════════════════════ -->
+<div class="cover-header">
+  <p class="label" style="color: #93c5fd; margin-bottom: 6px;">Cyber Risk Quantification · FAIR Methodology</p>
+  <h1>Risk Assessment Report</h1>
+  <p class="subtitle">{{ risk.client_name }} &nbsp;·&nbsp; {{ risk.industry }}</p>
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <p class="label">Report Date</p>
+      <p class="value">{{ generated_at }}</p>
+    </div>
+    <div class="cover-meta-item">
+      <p class="label">Simulations</p>
+      <p class="value mono">{{ "{:,}".format(risk.n_simulations) }} iterations</p>
+    </div>
+    <div class="cover-meta-item">
+      <p class="label">Scenarios Modelled</p>
+      <p class="value">{{ risk.scenarios | length }}</p>
+    </div>
+    <div class="cover-meta-item">
+      <p class="label">Seed</p>
+      <p class="value mono">42 (reproducible)</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 1 — EXECUTIVE SUMMARY
+══════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <p class="section-title">1 · Executive Summary</p>
+
+  <!-- KPI row -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <p class="label">Mean Annual Loss (ALE)</p>
+      <p class="kpi-value">{{ risk.total_ale.mean | fmt }}</p>
+      <p class="kpi-sub">Expected loss per year (10,000 MC iterations)</p>
+    </div>
+    <div class="kpi-card">
+      <p class="label">VaR-90 (Worst-Case)</p>
+      <p class="kpi-value red">{{ risk.total_var_90 | fmt }}</p>
+      <p class="kpi-sub">Loss exceeded in only 10% of simulated years</p>
+    </div>
+    <div class="kpi-card">
+      <p class="label">Median Loss (P50)</p>
+      <p class="kpi-value blue">{{ risk.total_ale.p50 | fmt }}</p>
+      <p class="kpi-sub">50th percentile annual portfolio loss</p>
+    </div>
+  </div>
+
+  <!-- Key finding -->
+  {%- set top = risk.scenarios | sort(attribute='ale.mean', reverse=True) | first %}
+  <div class="finding-box">
+    <p class="finding-label">Key Finding</p>
+    <p>
+      {{ risk.client_name }} faces an expected annual cyber loss of
+      <strong>{{ risk.total_ale.mean | fmt }}</strong> across
+      <strong>{{ risk.scenarios | length }}</strong> modelled threat scenarios.
+      In an adverse year (VaR-90), losses could reach
+      <strong>{{ risk.total_var_90 | fmt }}</strong>.
+      The dominant risk driver is <strong>{{ top.scenario_name.split('—')[0].strip() }}</strong>,
+      representing <strong>{{ top.contribution_pct }}%</strong> of total portfolio risk.
+    </p>
+  </div>
+
+  <!-- Annualized loss range table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Statistic</th>
+        <th class="right">Value (USD)</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>P10 — Best Case</td>
+        <td class="right mono">{{ risk.total_ale.p10 | fmt }}</td>
+        <td>Loss exceeded in 90% of simulated years</td>
+      </tr>
+      <tr>
+        <td>P50 — Median</td>
+        <td class="right mono">{{ risk.total_ale.p50 | fmt }}</td>
+        <td>Loss exceeded in 50% of simulated years</td>
+      </tr>
+      <tr>
+        <td>Mean ALE</td>
+        <td class="right mono">{{ risk.total_ale.mean | fmt }}</td>
+        <td>Statistical expected value of annual loss</td>
+      </tr>
+      <tr>
+        <td>P90 / VaR-90</td>
+        <td class="right mono" style="color:#dc2626; font-weight:600;">{{ risk.total_var_90 | fmt }}</td>
+        <td>Value-at-Risk: loss exceeded only 10% of simulated years</td>
+      </tr>
+      <tr>
+        <td>P99 — Tail Risk</td>
+        <td class="right mono" style="color:#dc2626;">{{ risk.total_ale.p99 | fmt }}</td>
+        <td>Extreme tail loss (1-in-100 year scenario)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 2 — SCENARIO RISK ANALYSIS
+══════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <p class="section-title">2 · Scenario Risk Analysis</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Scenario</th>
+        <th>Asset at Risk</th>
+        <th class="right">Mean ALE</th>
+        <th class="right">VaR-90</th>
+        <th class="right">P10 (Best)</th>
+        <th class="right">Risk Share</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for s in risk.scenarios | sort(attribute='ale.mean', reverse=True) %}
+      {%- set sc_color = {
+          'ransomware': '#dc2626', 'data-breach': '#ea580c',
+          'bec': '#ca8a04', 'insider-threat': '#7c3aed', 'third-party': '#0284c7'
+      } %}
+      <tr>
+        <td>
+          <span class="dot" style="background:{{ sc_color.get(s.scenario_id, '#64748b') }};"></span>
+          <strong>{{ s.scenario_name.split('—')[0].strip() }}</strong>
+        </td>
+        <td style="color:#64748b; font-size:8pt;">{{ s.asset }}</td>
+        <td class="right mono"><strong>{{ s.ale.mean | fmt }}</strong></td>
+        <td class="right mono" style="color:#dc2626;">{{ s.var_90 | fmt }}</td>
+        <td class="right mono" style="color:#16a34a;">{{ s.ale.p10 | fmt }}</td>
+        <td class="right">
+          <span class="badge badge-slate">{{ s.contribution_pct }}%</span>
+        </td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Portfolio Total</td>
+        <td class="right mono">{{ risk.total_ale.mean | fmt }}</td>
+        <td class="right mono" style="color:#dc2626;">{{ risk.total_var_90 | fmt }}</td>
+        <td class="right mono" style="color:#16a34a;">{{ risk.total_ale.p10 | fmt }}</td>
+        <td class="right">100%</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- Bar chart -->
+  <div class="chart-wrap">
+    <img src="data:image/png;base64,{{ bar_chart_b64 }}" alt="Scenario ALE bar chart" />
+    <p class="chart-caption">Figure 1 — Mean Annual Loss Exposure (ALE) by Scenario, ranked by financial impact</p>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 3 — LOSS EXCEEDANCE CURVE
+══════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <p class="section-title">3 · Portfolio Loss Exceedance Curve</p>
+  <p style="font-size:8.5pt; color:#475569; margin-bottom:10px;">
+    The Loss Exceedance Curve (LEC) shows the probability that annual portfolio losses exceed any given
+    threshold. The shaded regions indicate the lower-risk zone (&lt;P50), elevated-risk zone (P50–VaR-90),
+    and tail-risk zone (&gt;VaR-90).
+  </p>
+
+  <div class="chart-wrap">
+    <img src="data:image/png;base64,{{ lec_chart_b64 }}" alt="Loss Exceedance Curve" />
+    <p class="chart-caption">Figure 2 — Portfolio Loss Exceedance Curve (probability that annual loss exceeds threshold)</p>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 4 — COST-BENEFIT OF CONTROLS  (only if controls present)
+══════════════════════════════════════════════════════════════════════ -->
+{%- set ctrl_scenarios = risk.scenarios | selectattr('control_benefit') | list %}
+{%- if ctrl_scenarios %}
+<div class="section page-break">
+  <p class="section-title">4 · Cost-Benefit of Recommended Controls</p>
+  <p style="font-size:8.5pt; color:#475569; margin-bottom:10px;">
+    ROI = (ALE Reduction − Control Cost) ÷ Control Cost × 100.
+    Residual ALE = Current Mean ALE × (1 − Reduction %).
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Scenario</th>
+        <th>Proposed Control</th>
+        <th class="right">Current ALE</th>
+        <th class="right">Control Cost / yr</th>
+        <th class="right">Residual ALE</th>
+        <th class="right">ALE Reduction</th>
+        <th class="right">Net Benefit / yr</th>
+        <th class="right">ROI</th>
+        <th class="right">Payback</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for s in ctrl_scenarios %}
+      {%- set cb = s.control_benefit %}
+      {%- set roi = cb.roi_pct %}
+      <tr>
+        <td><strong>{{ s.scenario_name.split('—')[0].strip() }}</strong></td>
+        <td style="font-size:8pt;">
+          <strong>{{ cb.name }}</strong><br/>
+          <span style="color:#64748b;">{{ cb.description[:90] }}{% if cb.description|length > 90 %}…{% endif %}</span>
+        </td>
+        <td class="right mono">{{ s.ale.mean | fmt }}</td>
+        <td class="right mono" style="color:#d97706;">{{ cb.annual_cost | fmt }}</td>
+        <td class="right mono" style="color:#16a34a;">{{ cb.residual_ale_mean | fmt }}</td>
+        <td class="right mono">{{ cb.ale_reduction | fmt }}<br/><span style="font-size:7.5pt; color:#64748b;">{{ cb.ale_reduction_pct }}% reduction</span></td>
+        <td class="right mono {% if cb.net_annual_benefit >= 0 %}roi-good{% else %}roi-negative{% endif %}">
+          {% if cb.net_annual_benefit >= 0 %}+{% endif %}{{ cb.net_annual_benefit | fmt }}
+        </td>
+        <td class="right mono
+          {%- if roi is not none and roi >= 400 %} roi-excellent
+          {%- elif roi is not none and roi >= 100 %} roi-good
+          {%- elif roi is not none and roi >= 0 %} roi-marginal
+          {%- elif roi is not none %} roi-negative
+          {%- endif %}">
+          {%- if roi is not none %}{{ "%.0f"|format(roi) }}%{%- else %}—{%- endif %}
+        </td>
+        <td class="right" style="font-size:8pt; color:#64748b;">
+          {%- if cb.payback_months is not none -%}
+            {%- if cb.payback_months < 12 -%}{{ "%.0f"|format(cb.payback_months) }} mo
+            {%- else -%}{{ "%.1f"|format(cb.payback_months / 12) }} yr{%- endif -%}
+          {%- else %}—{%- endif %}
+        </td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+    {%- set totals_ale = ctrl_scenarios | map(attribute='ale.mean') | sum %}
+    {%- set totals_cost = ctrl_scenarios | map(attribute='control_benefit.annual_cost') | sum %}
+    {%- set totals_residual = ctrl_scenarios | map(attribute='control_benefit.residual_ale_mean') | sum %}
+    {%- set totals_reduction = ctrl_scenarios | map(attribute='control_benefit.ale_reduction') | sum %}
+    {%- set totals_net = ctrl_scenarios | map(attribute='control_benefit.net_annual_benefit') | sum %}
+    <tfoot>
+      <tr>
+        <td colspan="2">Portfolio Total</td>
+        <td class="right mono">{{ totals_ale | fmt }}</td>
+        <td class="right mono" style="color:#d97706;">{{ totals_cost | fmt }}</td>
+        <td class="right mono" style="color:#16a34a;">{{ totals_residual | fmt }}</td>
+        <td class="right mono">{{ totals_reduction | fmt }}</td>
+        <td class="right mono {% if totals_net >= 0 %}roi-good{% else %}roi-negative{% endif %}">
+          {% if totals_net >= 0 %}+{% endif %}{{ totals_net | fmt }}
+        </td>
+        {%- set port_roi = ((totals_net / totals_cost) * 100) if totals_cost > 0 else none %}
+        <td class="right mono
+          {%- if port_roi is not none and port_roi >= 400 %} roi-excellent
+          {%- elif port_roi is not none and port_roi >= 100 %} roi-good
+          {%- elif port_roi is not none and port_roi >= 0 %} roi-marginal
+          {%- elif port_roi is not none %} roi-negative
+          {%- endif %}">
+          {%- if port_roi is not none %}{{ "%.0f"|format(port_roi) }}%{%- else %}—{%- endif %}
+        </td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+{%- endif %}
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SECTION 5 — FAIR METHODOLOGY REFERENCE
+══════════════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <p class="section-title">5 · FAIR Methodology Reference</p>
+  <table>
+    <thead>
+      <tr><th>Abbrev.</th><th>Term</th><th>Definition</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="mono" style="color:#2563eb;"><strong>TEF</strong></td><td>Threat Event Frequency</td><td>Expected number of times a threat actor acts against the asset per year</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>DIFF</strong></td><td>Difficulty (Control Strength)</td><td>Effectiveness of controls; attenuates exploitability: eff_vuln = VULN × (1 − DIFF)</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>VULN</strong></td><td>Base Vulnerability</td><td>Innate exploitability of the asset before controls (0 = no exposure, 1 = fully exposed)</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>LEF</strong></td><td>Loss Event Frequency</td><td>Expected successful attacks per year: TEF × effective_vuln</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>LM</strong></td><td>Loss Magnitude</td><td>Financial loss per event in USD (primary + secondary losses combined)</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>ALE</strong></td><td>Annual Loss Exposure</td><td>Expected annual financial impact: LEF × Loss Magnitude</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>VaR-90</strong></td><td>Value-at-Risk (90th pct.)</td><td>Loss threshold exceeded in only 10% of simulated years</td></tr>
+      <tr><td class="mono" style="color:#2563eb;"><strong>ROI</strong></td><td>Control Return on Investment</td><td>(ALE Reduction − Control Cost) ÷ Control Cost × 100</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════════════════ -->
+<div class="report-footer">
+  Generated by CRQ Platform &nbsp;·&nbsp; FAIR v2 Engine &nbsp;·&nbsp; Monte Carlo seed = 42 &nbsp;·&nbsp; {{ "{:,}".format(risk.n_simulations) }} iterations &nbsp;·&nbsp; {{ generated_at }}<br/>
+  This report is confidential and intended solely for the named client and authorised consultants.
+  The financial figures represent probabilistic estimates based on FAIR methodology and
+  should not be interpreted as guarantees of loss outcomes.
+</div>
+
+</body>
+</html>
